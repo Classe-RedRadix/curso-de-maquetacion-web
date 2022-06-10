@@ -1,7 +1,6 @@
 # CLASSE - Curso maquetación
 
 ## Contenido
-- [Contenido](#contenido)
 - [Sobre Classe](#sobre-classe)
 - [Sobre este curso](#sobre-este-curso)
 - [Requisitos técnicos](#requisitos-técnicos)
