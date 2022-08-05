@@ -1,6 +1,7 @@
 # CLASSE - Curso maquetación
 
 ## Contenido
+
 - [Sobre Classe](#sobre-classe)
 - [Sobre este curso](#sobre-este-curso)
 - [Requisitos técnicos](#requisitos-técnicos)
@@ -31,7 +32,7 @@ TBD
   - [Ejercicio](/modulo-1-introduccion/ejercicio/README.md)
 - [Módulo 2 - Layout](/modulo-2-layout/README.md)
   - [Ejercicio](/modulo-2-layout/ejercicio/README.md)
-- [Módulo 3 - Animaciones](/modulo-3-animaciones/README.md)
-  - [Ejercicio](/modulo-3-animaciones/ejercicio/README.md)
+- [Módulo 3 - Efectos](/modulo-3-efectos/README.md)
+  - [Ejercicio](/modulo-3-efectos/ejercicio/README.md)
 - [Módulo 4 - Extra](/modulo-4-extra/README.md)
 - [Proyecto final](/proyecto-final/README.md)
