@@ -13,13 +13,13 @@
 
 .title-l {
   font-family: var(--font-italiana);
-  font-weight: regular;
+  font-weight: 100;
   font-size: 8.75rem; /* 140px */
   line-height: 9.75rem;
 }
 .title-m {
   font-family: var(--font-italiana);
-  font-weight: regular;
+  font-weight: 100;
   font-size: 5rem; /* 80px */
   line-height: 6rem;
 }
