@@ -1,44 +1,33 @@
-body {
-  font-size: 16px;
-  line-height: 32px;
-  font-family: var(--font-poppins);
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  background-color: var(--background-body);
-}
-
 .boarding-pass {
   width: 23.4375rem;
-  margin: 0.625rem auto;
+  margin: var(--spacing-xxs) auto;
   background-color: var(--neutral-100);
   border-radius: 24px;
   overflow: hidden;
 }
 
-.header {
+.boarding-pass .header {
   background-color: var(--secondary-900);
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 20.9375rem; /* 335px */
-  background: url('../assets/images/boarding-pass-image.jpg');
+  background: url('../../assets/images/boarding-pass-image.jpg');
 
   box-sizing: border-box;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
 }
-.header-logo {
+.boarding-pass .header-logo {
   max-width: 6.125rem;
 }
-.headerInfo {
+.boarding-pass .headerInfo {
   display: flex;
   justify-content: space-between;
 }
-.headerInfo-item {
+.boarding-pass .headerInfo-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,41 +39,41 @@ body {
 [alt='icon-between'] {
   margin-top: 0.9375rem;
 }
-.headerInfo-title {
+.boarding-pass .headerInfo-title {
   color: var(--primary-500);
 }
-.headerInfo-iconWrapper img {
+.boarding-pass .headerInfo-iconWrapper img {
   display: block;
   margin: 0 auto;
   max-width: 1.25rem;
   max-height: 1.25rem;
 }
 
-.contentWrapper {
+.boarding-pass .contentWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1.25rem;
   grid-row-gap: 1.75rem;
-  padding: 3rem 1.25rem;
+  padding: var(--spacing-l) 1.25rem;
 }
-.contentWrapper :first-child {
+.boarding-pass .contentWrapper :first-child {
   grid-area: 1 / 1 / 2 / 4;
 }
 
-.content-item {
+.boarding-pass .content-item {
   color: var(--secondary-900);
 }
 
-.content-item .title-xs {
+.boarding-pass .content-item .title-xs {
   color: var(--primary-600);
 }
 
-.footer {
-  background-image: url('../assets/images/border-bg.jpg');
+.boarding-pass .footer {
+  background-image: url('../../assets/images/border-bg.jpg');
   background-repeat-y: no-repeat;
   position: relative;
 }
-.footer .content-item {
+.boarding-pass .footer .content-item {
   position: relative;
 }
 
@@ -105,7 +94,7 @@ body {
   right: 0;
   transform: translate(50%, -50%);
 }
-.qr-code {
+.boarding-pass .qr-code {
   max-width: 4.5625rem;
   position: absolute;
   bottom: 0;

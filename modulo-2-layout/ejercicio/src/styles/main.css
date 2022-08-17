@@ -2,4 +2,6 @@
 @import 'tokens.css';
 @import 'helpers.css';
 
-@import 'boarding-pass.css';
+@import 'base.css';
+@import 'practice/boarding-pass.css';
+@import 'practice/newspaper.css';
