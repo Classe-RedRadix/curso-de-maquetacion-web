@@ -1,0 +1,112 @@
+body {
+  font-size: 16px;
+  line-height: 32px;
+  font-family: var(--font-poppins);
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: var(--background-body);
+}
+
+.boarding-pass {
+  width: 23.4375rem;
+  margin: 0.625rem auto;
+  background-color: var(--neutral-100);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: var(--secondary-900);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20.9375rem; /* 335px */
+  background: url('../assets/images/boarding-pass-image.jpg');
+
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.header-logo {
+  max-width: 6.125rem;
+}
+.headerInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.headerInfo-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0.25rem;
+  color: var(--neutral-100);
+  width: 6.125rem;
+}
+[alt='icon-between'] {
+  margin-top: 0.9375rem;
+}
+.headerInfo-title {
+  color: var(--primary-500);
+}
+.headerInfo-iconWrapper img {
+  display: block;
+  margin: 0 auto;
+  max-width: 1.25rem;
+  max-height: 1.25rem;
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 1.75rem;
+  padding: 3rem 1.25rem;
+}
+.contentWrapper :first-child {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.content-item {
+  color: var(--secondary-900);
+}
+
+.content-item .title-xs {
+  color: var(--primary-600);
+}
+
+.footer {
+  background-image: url('../assets/images/border-bg.jpg');
+  background-repeat-y: no-repeat;
+  position: relative;
+}
+.footer .content-item {
+  position: relative;
+}
+
+.footer::after,
+.footer::before {
+  content: '';
+  height: 1px;
+  background-color: var(--neutral-400);
+  display: block;
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer::after {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.qr-code {
+  max-width: 4.5625rem;
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,41 @@
+.body-l {
+  font-size: 1.375rem; /* 22px */
+  line-height: 2rem;
+}
+.body-s {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem;
+}
+.body-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem;
+}
+
+.title-l {
+  font-family: var(--font-italiana);
+  font-weight: regular;
+  font-size: 8.75rem; /* 140px */
+  line-height: 9.75rem;
+}
+.title-m {
+  font-family: var(--font-italiana);
+  font-weight: regular;
+  font-size: 5rem; /* 80px */
+  line-height: 6rem;
+}
+.title-s {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+.title-xs {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
