@@ -87,17 +87,35 @@
 
 /*****************/
 /* priority section */
-.priority-section article {
-  display: flex;
-  gap: 24px;
-}
-.priority-section .contentArticle {
-  column-count: 2;
+
+.priority-section figure {
+  margin: 24px auto 0;
+  max-width: 400px;
 }
 
-.content-col {
-  flex-basis: 70%;
+@media (min-width: 992px) {
+  .priority-section article {
+    display: flex;
+    gap: 24px;
+  }
+  .priority-section .contentArticle {
+    column-count: 2;
+  }
+
+  .priority-section .content-col {
+    flex-basis: 70%;
+  }
+  .priority-section .content-figure {
+    flex-basis: 30%;
+    position: relative;
+  }
+  .priority-section figure {
+    position: sticky;
+    top: 10px;
+    margin: 0;
+  }
 }
+
 /* end priority section */
 /*****************/
 
