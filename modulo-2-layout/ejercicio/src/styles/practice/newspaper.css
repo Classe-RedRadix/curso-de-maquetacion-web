@@ -9,6 +9,18 @@
   padding: var(--spacing-m) 0;
   height: min-content;
 }
+.newspaper article .title-m {
+  margin-bottom: var(--spacing-xs);
+}
+.newspaper article .title-s {
+  margin-bottom: 24px;
+}
+.newspaper .contentArticle p + p {
+  margin-top: var(--spacing-xs);
+}
+
+/*****************/
+/* header */
 .header {
   color: var(--secondary-900);
 }
@@ -22,10 +34,9 @@
   border-top: 1px solid var(--secondary-900);
   border-bottom: 1px solid var(--secondary-900);
   padding: var(--spacing-xxs) 0;
-  margin: var(--spacing-s) 0;
+  margin-top: var(--spacing-s);
 }
 .header-info p {
-  max-width: 180px;
   min-width: 103px;
   text-align: center;
 }
@@ -35,6 +46,10 @@
 .header-info :last-child {
   text-align: right;
 }
+/* end header */
+/*****************/
+
+/*****************/
 /* main layout */
 
 .contentWrapper {
@@ -68,24 +83,78 @@
   grid-area: content2;
 }
 /* end main layout*/
+/*****************/
+
+/*****************/
+/* priority section */
 .priority-section article {
   display: flex;
-  flex-wrap: wrap;
+  gap: 24px;
 }
 .priority-section .contentArticle {
   column-count: 2;
 }
+
 .content-col {
   flex-basis: 70%;
 }
+/* end priority section */
+/*****************/
 
+/*****************/
+/* content 1*/
+.content1 .contentArticle {
+  margin-top: var(--spacing-s);
+}
+/* end content 1*/
+/*****************/
+
+/*****************/
+/* aside*/
 .aside {
   margin-left: var(--spacing-s);
+  display: flex;
 }
 .aside article {
   margin-left: var(--spacing-s);
 }
+.aside img {
+  margin-top: var(--spacing-m);
+}
+/* end aside*/
+/*****************/
 
+/*****************/
+/* content 2*/
+.newspaper .content2 {
+  border: 0;
+  padding-bottom: 0;
+}
+.content2 img {
+  margin-top: var(--spacing-s);
+}
+/* end content 2*/
+/*****************/
+
+/*****************/
+/* content 3*/
+.newspaper .content3 {
+  border: 0;
+  border-left: 1px solid var(--secondary-800);
+  padding-left: var(--spacing-l);
+  margin-left: var(--spacing-l);
+  padding-top: 0;
+  margin-top: var(--spacing-m);
+}
 .content3 .contentArticle {
   column-count: 2;
 }
+.content3 figure {
+  margin-top: var(--spacing-xs);
+  margin-bottom: 24px;
+}
+.content3 img {
+  max-width: 100%;
+}
+/* end content 1*/
+/*****************/
