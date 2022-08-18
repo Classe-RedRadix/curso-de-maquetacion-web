@@ -52,16 +52,27 @@
 /*****************/
 /* main layout */
 
-.contentWrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, min-content);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    'priority-section priority-section'
-    'content1 aside'
-    'content2 content3';
+@media (min-width: 768px) {
+  .contentWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+    gap: 0px 0px;
+
+    grid-template-areas:
+      'priority-section priority-section'
+      'content1 content1'
+      'aside aside'
+      'content2 content3';
+  }
+}
+@media (min-width: 1200px) {
+  .contentWrapper {
+    grid-template-areas:
+      'priority-section priority-section'
+      'content1 aside'
+      'content2 content3';
+  }
 }
 .priority-section {
   grid-area: priority-section;
@@ -123,6 +134,11 @@
 /* content 1*/
 .content1 .contentArticle {
   margin-top: var(--spacing-s);
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .content1 .contentArticle {
+    column-count: 2;
+  }
 }
 /* end content 1*/
 /*****************/
