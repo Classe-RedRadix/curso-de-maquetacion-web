@@ -45,8 +45,9 @@ Más info sobre este curso en [nuestra web](https://www.classe.dev/cursos/maquet
 
 ## Requerimientos de software
 
-Para realizar el curso de maquetación necesitas tener instalado:
+Para realizar el curso de maquetación necesitas tener instalado en tu ordenador:
 
-- [Git](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/herramienta-git.md)
-- [NodeJS](https://nodejs.org/es/): [aquí tienes una pequeña guía](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/herramienta-nodejs.md) sobre cómo hacerlo.
+- Git: [aquí](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/herramienta-git.md) tienes una guía sobre para qué lo usamos y recursos
+- NodeJS: [breve guía de instalación](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/herramienta-nodejs.md).
+- Un editor de código: puedes utilizar el que quieras, te recomendamos [VS Code](https://code.visualstudio.com/download)
 
