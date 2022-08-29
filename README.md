@@ -26,6 +26,8 @@ Los objetivos del curso son:
 - Implementar animaciones, transiciones y efectos para darle a tu web un toque único.
 - Desarrollar un proyecto de principio a fin: desde analizar el diseño hasta la puesta en producción de una web.
 
+Más info sobre este curso en [nuestra web](https://www.classe.dev/cursos/maqueta).
+
 ## Contenido del curso
 
 - [Prework](/prework/README.md)
@@ -38,3 +40,5 @@ Los objetivos del curso son:
   - [Ejercicio](/modulo-3-efectos/ejercicio/README.md)
 - [Módulo 4 - Extra](/modulo-4-extra/README.md)
 - [Proyecto final](/proyecto-final/README.md)
+
+Mas info en: classe.dev | Twitter | Linkedin
