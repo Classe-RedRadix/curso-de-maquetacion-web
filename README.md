@@ -14,7 +14,20 @@ Antes de continuar con este repositorio te pedimos que [leas los contenidos comu
 
 ## Sobre este curso
 
-TBD
+Estamos hartos de ver comportamientos responsive defectuosos, transiciones que no fluyen o scrolls que dan ganas de tirar el ordenador por la ventana. Basta ya! Este curso te ayudará a crear interfaces que respeten los estándares y, sobre todo, a los usuarios.
+
+Este es un curso avanzado para profesionales que han trabajado en desarrollo web al menos durante un año. Está centrado en learn by doing con ejercicios divertidos para hacer y corregir en vivo. Live programming al poder!
+
+Los objetivos del curso son:
+
+- Adquirir buenas prácticas.
+- Estructurar tu código para que sea mantenible y escalable.
+- Escribir código semántico y accesible.
+- Dominar el modelo mental para diseñar arquitecturas de componentes escalables.
+- Maquetar a partir de un diseño en Figma o herramienta similar.
+- Aprender y dominar las técnicas más actuales para crear layouts.
+- Implementar animaciones, transiciones y efectos para darle a tu web un toque único.
+- Desarrollar un proyecto de principio a fin: desde analizar el diseño hasta la puesta en producción de una web.
 
 ## Contenido del curso
 
