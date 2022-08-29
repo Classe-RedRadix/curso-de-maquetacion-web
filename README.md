@@ -4,6 +4,12 @@
 
 Antes de continuar con este repositorio te pedimos que [leas los contenidos comunes a todos los cursos de Classe](https://github.com/Classe-Redradix/curso-contenidos-comunes) donde te explicamos lo requerimientos técnicos que necesitas, cómo trabajamos a través de Slack o cómo puedes entregar tus ejercicios.
 
+## Contenidos
+
+- [Sobre este curso](#sobre-este-curso)
+- Objetivos del curso
+- Contenidos del curso
+
 ## Sobre este curso
 
 Estamos hartos de ver comportamientos responsive defectuosos, transiciones que no fluyen o scrolls que dan ganas de tirar el ordenador por la ventana. Basta ya! Este curso te ayudará a crear interfaces que respeten los estándares y, sobre todo, a los usuarios.
