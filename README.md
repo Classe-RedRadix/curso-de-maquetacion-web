@@ -4,18 +4,13 @@
 
 Antes de continuar con este repositorio te pedimos que [leas los contenidos comunes a todos los cursos de Classe](https://github.com/Classe-Redradix/curso-contenidos-comunes) donde te explicamos lo requerimientos técnicos que necesitas, cómo trabajamos a través de Slack o cómo puedes entregar tus ejercicios.
 
-## Contenido
-
-- [Sobre este curso](#sobre-este-curso)
-- [Contenido del curso](#contenido-del-curso)
-
 ## Sobre este curso
 
 Estamos hartos de ver comportamientos responsive defectuosos, transiciones que no fluyen o scrolls que dan ganas de tirar el ordenador por la ventana. Basta ya! Este curso te ayudará a crear interfaces que respeten los estándares y, sobre todo, a los usuarios.
 
 Este es un curso avanzado para profesionales que han trabajado en desarrollo web al menos durante un año. Está centrado en learn by doing con ejercicios divertidos para hacer y corregir en vivo. Live programming al poder!
 
-Los objetivos del curso son:
+### Los objetivos del curso son:
 
 - Adquirir buenas prácticas.
 - Estructurar tu código para que sea mantenible y escalable.
