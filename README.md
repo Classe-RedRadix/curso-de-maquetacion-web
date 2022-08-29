@@ -9,6 +9,7 @@ Antes de continuar con este repositorio te pedimos que [leas los contenidos comu
 - [Sobre este curso](#sobre-este-curso)
 - [Objetivos del curso](#objetivos-del-curso)
 - [Contenidos del curso](#contenido-del-curso)
+- [Requerimientos de software](#requerimientos-de-software)
 
 ## Sobre este curso
 
