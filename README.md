@@ -10,7 +10,7 @@ Estamos hartos de ver comportamientos responsive defectuosos, transiciones que n
 
 Este es un curso avanzado para profesionales que han trabajado en desarrollo web al menos durante un año. Está centrado en learn by doing con ejercicios divertidos para hacer y corregir en vivo. Live programming al poder!
 
-### Objetivos del curso:
+## Objetivos del curso:
 
 - Adquirir buenas prácticas.
 - Estructurar tu código para que sea mantenible y escalable.
