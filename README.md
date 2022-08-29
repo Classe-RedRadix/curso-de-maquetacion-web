@@ -4,23 +4,13 @@
 
 - [Sobre Classe](#sobre-classe)
 - [Sobre este curso](#sobre-este-curso)
-- [Requisitos técnicos](#requisitos-técnicos)
-- [Cómo realizar los ejercicios](#cómo-realizar-los-ejercicios)
 - [Contenido del curso](#contenido-del-curso)
 
 ## Sobre Classe
 
-TBS
+Antes de continuar con este repositorio te pedimos que [leas los contenidos comunes a todos los cursos de Classe](https://github.com/Classe-Redradix/curso-contenidos-comunes) donde te explicamos lo requerimientos técnicos que necesitas, cómo trabajamos a través de Slack o cómo puedes entregar tus ejercicios.
 
 ## Sobre este curso
-
-TBD
-
-## Requisitos técnicos
-
-TBD
-
-## Cómo realizar los ejercicios
 
 TBD
 
