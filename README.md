@@ -10,7 +10,7 @@ Estamos hartos de ver comportamientos responsive defectuosos, transiciones que n
 
 Este es un curso avanzado para profesionales que han trabajado en desarrollo web al menos durante un año. Está centrado en learn by doing con ejercicios divertidos para hacer y corregir en vivo. Live programming al poder!
 
-### Los objetivos del curso son:
+### Objetivos del curso:
 
 - Adquirir buenas prácticas.
 - Estructurar tu código para que sea mantenible y escalable.
@@ -35,5 +35,3 @@ Más info sobre este curso en [nuestra web](https://www.classe.dev/cursos/maquet
   - [Ejercicio](/modulo-3-efectos/ejercicio/README.md)
 - [Módulo 4 - Extra](/modulo-4-extra/README.md)
 - [Proyecto final](/proyecto-final/README.md)
-
-Mas info en: classe.dev | Twitter | Linkedin
