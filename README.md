@@ -7,8 +7,8 @@ Antes de continuar con este repositorio te pedimos que [leas los contenidos comu
 ## Contenidos
 
 - [Sobre este curso](#sobre-este-curso)
-- Objetivos del curso
-- Contenidos del curso
+- [Objetivos del curso](#objetivos-del-curso)
+- [Contenidos del curso](#contenido-del-curso)
 
 ## Sobre este curso
 
@@ -41,3 +41,7 @@ Más info sobre este curso en [nuestra web](https://www.classe.dev/cursos/maquet
   - [Ejercicio](/modulo-3-efectos/ejercicio/README.md)
 - [Módulo 4 - Extra](/modulo-4-extra/README.md)
 - [Proyecto final](/proyecto-final/README.md)
+
+## Requerimientos de software
+
+Para poder realizar el curso de maquetación necesitas tener instalado [NodeJS](https://nodejs.org/es/) en tu ordenador. [Aquí tienes una pequeña guía](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/herramienta-nodejs.md) sobre cómo hacerlo.
