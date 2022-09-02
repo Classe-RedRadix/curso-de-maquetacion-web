@@ -67,7 +67,7 @@
 @media (min-width: 48rem) {
   .contentWrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.25fr 1.75fr;
     grid-template-rows: min-content;
     gap: 0px 0px;
 
