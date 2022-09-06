@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Card</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <div class="img">
+        <img src="assets/images/form-image.jpg" alt="" />
+      </div>
+      <div class="form-content">
+        <div class="form-intro">
+          <h2 class="title-s">keep in touch</h2>
+          <p class="body-m">
+            Get news and updates as soon as they are announced: preorders, new
+            trailers, new features and much more!
+          </p>
+        </div>
+        <form action="" method="post" class="form">
+          <div class="form-block half">
+            <label for="form-name">First name:</label>
+            <input id="form-name" type="text" name="name" />
+          </div>
+          <div class="form-block half">
+            <label for="form-lastName">Last name:</label>
+            <input id="form-lastName" type="text" name="last_name" />
+          </div>
+          <div class="form-block">
+            <label for="form-email">Email:</label>
+            <input id="form-email" type="text" name="email" />
+          </div>
+          <div class="form-block">
+            <label for="form-subject">Subject:</label>
+            <input id="form-subject" type="text" name="subject" />
+          </div>
+          <div class="form-block">
+            <label for="form-message">Message:</label>
+            <textarea id="form-message" name="message"></textarea>
+          </div>
+          <div class="form-block form-block__check">
+            <input type="checkbox" value="" id="form-legal" />
+            <label class="form-check-label" for="form-legal">
+              I have read the
+              <a href="/#" target="_blank">Privacy Policy </a>and I agree to
+              receive the Newsletter.
+            </label>
+          </div>
+          <input type="submit" value="Save" class="title-s" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+:root {
+  --spacing-xxs: 0.5rem; /* 8px */
+  --spacing-xs: 1rem; /* 16px */
+  --spacing-s: 2rem; /* 32px */
+  --spacing-m: 3rem; /* 48px */
+  --spacing-l: 4rem; /* 64px */
+  --spacing-xl: 6rem; /* 96px */
+  --spacing-xxl: 8rem; /* 128px */
+
+  --primary-500: #ffacff;
+  --primary-600: #cd98e4;
+  --primary-700: #a36eba;
+  --secondary-500: #ae70f6;
+  --secondary-800: #1f0a70;
+  --secondary-900: #1f005c;
+
+  --neutral-100: #ffffff;
+  --neutral-400: #e5e5e5;
+
+  --background-body: var(--neutral-400);
+
+  --font-poppins: 'Poppins', sans-serif;
+  --font-italiana: 'Italiana', serif;
+  --form-control-color: rebeccapurple;
+  --form-control-disabled: #959495;
+}
