@@ -1,0 +1,13 @@
+{
+  "name": "solucion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
