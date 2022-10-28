@@ -1,6 +1,5 @@
 # dependencies
 node_modules
-
 # production
 /build
 /dist
@@ -14,3 +13,4 @@ yarn.lock
 
 /dist
 /.parcel-cache/*
+.cache
