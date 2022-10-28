@@ -1,0 +1,47 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  max-width: 335px;
+  background-color: #FFACFF;
+  color: #1F0A70;
+  font-family: 'Italiana';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  
+  .card-image {
+    width: 100%;
+  }
+  .card-body {
+    padding: 16px 24px 0;
+    .card-title {
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 72px;
+      margin: 16px 0 0;
+    }
+    .card-description {
+      margin: 8px 0 0;
+    }
+    .card-button {
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      width: 100%;
+      margin: 40px auto;
+      padding: 12px 0;
+      color: #FFACFF;
+      background-color: #1F0A70;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+}
