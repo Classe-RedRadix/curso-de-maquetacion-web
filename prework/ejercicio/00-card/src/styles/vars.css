@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #ffacff;
+  --secondary-color: #1f0a70;
+  --background-color: #e5e5e5;
+  --font-title: 'Italiana', serif;
+  --font-text: 'Poppins', sans-serif;
+  --font-title-size-desktop: 80px;
+  --font-title-size-mobile: 60px;
+  --font-text-size-desktop: 22px;
+  --font-text-size-mobile: 20px;
+}

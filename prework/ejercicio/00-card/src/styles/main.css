@@ -1,0 +1,74 @@
+@import 'reset.css';
+@import 'vars.css';
+@import 'utils.css';
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  width: 335px;
+  border-radius: 24px 24px 0px 0px;
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-text);
+  font-weight: 400;
+  padding: 16px 24px 40px;
+  gap: 35px;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: var(--font-title-size-mobile);
+  line-height: 72px;
+}
+
+.paragraph {
+  font-size: var(--font-text-size-mobile);
+  line-height: 32px;
+}
+
+.button {
+  background-color: var(--secondary-color); /* Green */
+  border: none;
+  color: var(--primary-color);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 628px;
+  }
+
+  .content {
+    align-items: start;
+  }
+
+  .title {
+    font-size: var(--font-title-size-desktop);
+  }
+
+  .paragraph {
+    font-size: var(--font-text-size-desktop);
+  }
+
+  .button {
+    width: 40%;
+  }
+}
