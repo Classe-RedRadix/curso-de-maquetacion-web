@@ -45,3 +45,22 @@ body {
     }
   }
 }
+
+@media (min-width: 768px) {
+  .card-container {
+    width: 39.25rem;
+    font-size: 1.375rem;
+
+    .card-body {
+      padding: 1.5rem 2rem 0;
+
+      .card-title {
+        font-size: 5rem;
+      }
+
+      .card-button {
+        width: 10.25rem;
+      }
+    }
+  }
+}
