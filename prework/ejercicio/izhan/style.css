@@ -1,0 +1,123 @@
+/* -- import fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+	/* -- colors -- */
+	--primary-500: #FFACFF;
+	--secondary-700: #2A1385;
+	--secondary-800: #1F0A70;
+
+	/* -- fonts -- */
+	--italiana: 'Italiana', serif;
+	--poppins: 'Poppins', sans-serif;
+
+	--title-2-sm: 60px;
+	--title-2-md: 80px;
+	--title-2-sm-lh: 72px;
+	--title-2-md-lh: 96px;
+	--title-2-w: 400;
+
+	--title-3: 18px;
+	--title-3-w: 600;
+	--title-3-lh: 24px;
+	--title-3-letter-sp: 2px;
+
+	--body-big-sm: 20px;
+	--body-big-sm-lh: 32px;
+	--body-big-md: 22px;
+	--body-big-md-lh: 32px;
+	--body-big-w: 400;
+
+	/* spaces */
+	--sp-8: 8px;
+	--sp-16: 16px;
+	--sp-24: 24px;
+	--sp-32: 32px;
+	--sp-40: 40px;
+}
+
+/* --- reset css --- */
+*, *::after, *::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: var(--poppins);
+}
+
+/* styles -> first for mobile */
+.card {
+	background: var(--primary-500);
+	color: var(--secondary-800);
+	border-radius: 12.8025px 12.8025px 0px 0px;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 12.8025px 12.8025px 0px 0px;
+}
+
+.card-content {
+	padding:  var(--sp-16) var(--sp-24) var(--sp-40);
+}
+
+.card-title-desc {
+	margin-bottom: var(--sp-40);
+}
+
+.card-title {
+	font-family: var(--italiana);
+	font-size: var(--title-2-sm);
+	font-weight: var(--title-2-w);
+	line-height: var(--title-2-sm-lh);
+	margin-bottom: var(--sp-8);
+}
+
+.card-desc {
+	font-size: var(--body-big-sm);
+	font-weight: var(--body-big-w);
+}
+
+.card button {
+	color: var(--primary-500);
+	background: var(--secondary-800);
+	padding: 12px var(--sp-32);
+
+	font-size: var(--title-3);
+	line-height: var(--title-3-lh);
+	font-weight: var(--title-3-w);
+	letter-spacing: var(--title-3-letter-sp);
+	
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}
+
+.card button:hover {
+	background: var(--secondary-700);
+}
+
+/* styles for larger devices */
+@media only screen and (min-width: 628px) {
+	.card {
+		width: 628px;
+		border-radius: 24px 24px 0px 0px;
+	}
+	.card img {
+		border-radius: 24px 24px 0px 0px;
+	}
+	.card-content {
+		padding: var(--sp-24) var(--sp-32) var(--sp-40);
+	}
+	.card-title {
+		font-size: var(--title-2-md);
+		line-height: var(--title-2-md-lh);
+	}
+	.card-desc {
+		font-size: var(--body-big-md);
+	}
+	.card button {
+		margin-right: auto;
+		width: auto;
+	}
+}
