@@ -43,21 +43,8 @@ body {
   width: 500px;
 
   position: absolute;
-  top: -136px;
-  left: -170px;
-
-  border: 2px solid white;
-  border-radius: 100%;
-  clip-path: polygon(
-    100% 0%,
-    100% 100%,
-    60% 100%,
-    60% 90%,
-    40% 90%,
-    40% 100%,
-    0% 100%,
-    0% 0%
-  );
+  top: -134px;
+  left: -168px;
 
   animation: 1.32s linear infinite ellipse-rotation;
 }
