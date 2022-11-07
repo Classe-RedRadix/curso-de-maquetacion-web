@@ -1,0 +1,98 @@
+.body {
+  background-color: var(--base-color);
+  font-family: var(--font-poppins);
+}
+
+.main {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.header {
+  gap: 130px;
+  max-width: 1440px;
+}
+
+.section {
+  padding: 1rem;
+}
+
+.intro {
+  color: var(--font-color);
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  font-size: 16px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.input-field label {
+  margin-bottom: 1rem;
+}
+
+.input {
+  height: 2.5rem;
+  border: 0;
+  border-bottom: 1px solid var(--primary-color);
+  background-color: var(--input-color);
+  color: white;
+}
+
+.input .textarea {
+  height: 5rem;
+}
+
+.textarea {
+  height: 6rem;
+}
+
+.checkbox-field {
+  display: flex;
+}
+
+.checkbox-field label {
+  font-size: 12px;
+}
+
+.submit-field {
+  margin-top: 2rem;
+}
+
+.submit-field button[type='submit'] {
+  display: block;
+  text-align: center;
+  padding: 12px 12px;
+  background-color: var(--font-color);
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  margin-top: 10px;
+  border: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+}
