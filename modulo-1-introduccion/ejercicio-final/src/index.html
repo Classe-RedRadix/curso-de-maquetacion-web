@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Final</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body>
+  <section class="card-container">
+    <header>
+      <img class="hero-image" src="./assets/images/form-image.jpg" alt="robots">
+      <div class="hero-content">
+        <h1 class="hero-title">Keep in touch</h1>
+        <p class="hero-description">
+          Get news and updates as soon as they are announced: preorders, new trailers, new features and much more!
+        </p>
+      </div>
+    </header>
+    <main class="card-body">
+      <form method="POST" id="contact_form">
+        <div class="form-inputs">
+          <label for="first-name">First name</label>
+          <input class="input-text" type="text" name="first-name" id="first-name" placeholder="ex: Maeve" required>
+        </div>
+        <div class="form-inputs">
+          <label for="last-name">Last name</label>
+          <input class="input-text" type="text" name="last-name" id="last-name" placeholder="ex: Dro" required>
+        </div>
+        <div class="form-inputs">
+          <label for="email">Email</label>
+          <input class="input-text" type="email" name="email" id="email" placeholder="ex: maeve.dro@example.com" required>
+        </div>
+        <div class="form-inputs">
+          <label for="subject">Subject</label>
+          <input class="input-text" type="subject" name="subject" id="subject" placeholder="ex: Contact info" required>
+        </div>
+        <div class="form-inputs">
+          <label for="message">Message</label>
+          <textarea class="input-textarea" name="textarea" id="message" form="contact_form" required>Escribe por aquí</textarea>
+        </div>
+        <div class="form-inputs checkbox-form">
+          <label for="policy">I have read the <a class="link-policy" href="#4">Privacy Policy</a> and I agree to receive the Newsletter.</label>
+          <input class="checkbox-input" type="checkbox" name="policy" id="policy" required>
+        </div>
+        <button class="button-form">Submit</button>
+      </form>
+    </main>
+      
+  </section>
+</body>
+</html>

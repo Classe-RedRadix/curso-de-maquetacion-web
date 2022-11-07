@@ -1,0 +1,95 @@
+html, body {
+  font-family: 'Poppins';
+  font-size: 1.125rem;
+  background-color: #1F005C;
+  margin: 0;
+  color: #FFACFF;
+}
+
+.card-container {
+  margin: 64px 0;
+  height: 100%;
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-content {
+    margin: 2rem 1.25rem;
+    .hero-title {
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 1rem 0;
+    }
+    .hero-description {
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .card-body {
+    margin: 0 1.25rem;
+    font-size: 1rem;
+    .form-inputs {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+      gap: 8px;
+      .input-text {
+        height: 3.5rem;
+        font-size: inherit;
+        color: inherit;
+        background-color: #1F0A70;
+        border: 0;
+        border-bottom: 1px solid #A36EBA;
+        &::placeholder {
+          color: #fff;
+          padding: 1rem;
+        }
+      }
+      .input-textarea {
+        height: 8rem;
+        font-size: inherit;
+        color: #fff;
+        padding: 1rem;
+        background-color: #1F0A70;
+        border: 0;
+        border-bottom: 1px solid #A36EBA;
+      }
+    }
+    .checkbox-form {
+      font-size: 0.75rem;
+      flex-direction: row-reverse;
+      label {
+        width: calc(100% - 18px)
+      }
+      .checkbox-input {
+        -webkit-appearance: none;
+        margin: 0;
+        padding: 0;
+        background-color: #1F0A70;
+        border: 1px solid #A36EBA;
+        width: 1rem;
+        height: 1rem;
+        flex-grow: 1;
+      }
+      .link-policy {
+        color: inherit;
+      }
+    }
+    .button-form {
+      font-size: 1.125rem;
+      width: 100%;
+      background-color: #FFACFF;
+      text-transform: uppercase;
+      padding: 0.75rem 0;
+      border: 1px solid #A36EBA;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    
+  }
+}
