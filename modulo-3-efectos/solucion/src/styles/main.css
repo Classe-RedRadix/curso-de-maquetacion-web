@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background-color: #1f005c;
+}
+
+.content-loader {
+  position: relative;
+}
+
+.img-diamond {
+  animation: 0.66s ease-in-out infinite alternate diamond-position;
+}
+
+.blur {
+  display: block;
+  height: 142px;
+  width: 142px;
+
+  position: absolute;
+  top: 20px;
+  right: 32px;
+
+  border-radius: 50%;
+  background: linear-gradient(90deg, #b71df6 0%, #5d03d5 100%);
+  filter: blur(25px);
+
+  animation-name: blur-opacity, blur-position;
+  animation-duration: 0.66s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s, 0.16s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ellipse {
+  display: block;
+  height: 500px;
+  width: 500px;
+
+  position: absolute;
+  top: -134px;
+  left: -168px;
+
+  animation: 1.32s linear infinite ellipse-rotation;
+}
+
+@keyframes diamond-position {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-31px);
+  }
+}
+
+@keyframes blur-opacity {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.83;
+  }
+}
+@keyframes blur-position {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-52px);
+  }
+}
+
+@keyframes ellipse-rotation {
+  from {
+    transform: rotateX(62deg) rotateY(28deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(62deg) rotateY(28deg) rotateZ(360deg);
+  }
+}
