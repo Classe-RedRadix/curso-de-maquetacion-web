@@ -7,14 +7,20 @@
   background-color: var(--secondary-color);
   color: var(--primary-color);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
 
 .header {
-  gap: 130px;
-  max-width: 1440px;
+  height: 50vh;
+}
+
+.header img {
+  object-fit: contain;
+  height: 100%;
+  object-position: right;
 }
 
 .section {
