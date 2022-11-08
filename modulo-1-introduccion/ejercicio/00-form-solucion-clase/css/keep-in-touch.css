@@ -1,0 +1,17 @@
+.contact__keep-in-touch {}
+
+.contact__header {}
+
+.contact__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.contact__intro {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 0 40px;
+}

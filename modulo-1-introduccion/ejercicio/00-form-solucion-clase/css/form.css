@@ -1,0 +1,145 @@
+
+
+
+.form { }
+
+.form__group { }
+
+.form__row + .form__row,
+.form__group + .form__row  {
+  margin-top: 24px;
+}
+
+.form__label { 
+  display: block;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: var(--color-label);
+}
+
+.form__field {
+  background-color: var(--color-field);
+  color: var(--color-white);
+  font: inherit;
+  padding: 0 16px;
+  height: 56px;
+  border: 0;
+  border-bottom: 1px solid var(--color-label);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form__row:focus-within .form__field {
+  border-color: var(--color-selected);
+}
+
+.form__row:focus-within .form__label {
+  color: var(--color-selected);
+}
+
+
+.form__field--textarea {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  line-height: 24px;
+  height: calc( 16*2px + 24 * 3px);
+}
+
+.form__row + .form__actions {
+  margin-top: 40px;
+}
+
+.form__submit {
+  padding: 0 32px;
+  line-height: 48px;
+  border-radius: 0;
+  background-color: var(--color-selected);
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--color-field);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color ease .5s;
+}
+
+.form__submit:hover {
+  background-color: var(--color-button-hover);
+}
+
+
+@media (min-width: 1440px) {
+  .form__group {
+    display: flex;
+  }
+
+  .form__row {
+      flex-grow: 1;
+  }
+  
+  .form__group .form__row + .form__row {
+    margin-top: 0;
+    margin-left: 24px;
+  }
+
+  .form__submit {
+    width: auto;
+  }
+}
+
+
+
+
+
+/* CHECKBOX */
+.form__checkbox {
+  position: relative;
+}
+
+.form__checkbox-field {
+  position: absolute;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  outline: none;
+  z-index: 1;
+  left: 2px;
+  top: 2px;
+}
+
+.form__checkbox-label {
+  padding-left: 24px;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form__checkbox-label::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-selected);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__checkbox-field:focus + .form__checkbox-label::before {
+  box-shadow: 0 0 3px var(--color-white);
+}
+
+.form__checkbox-field:checked + .form__checkbox-label::before {
+  background-image: url(../img/checked.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form__checkbox-link {
+  color: inherit;
+}

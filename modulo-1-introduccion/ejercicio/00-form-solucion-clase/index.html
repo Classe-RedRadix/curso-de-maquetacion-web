@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keep in touch</title>
+  <link rel="stylesheet" href="css/vars.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/keep-in-touch.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body class="contact">
+  <main class="contact__main">
+    <section class="contact__keep-in-touch">
+      <header class="contact__header">
+        <h2 class="contact__subtitle">Keep in touch</h2>
+        <p class="contact__intro">Get news and updates as soon as they are announced: preorders, new trailers, new features and much more!</p>
+      </header>
+      <form class="form" action="">
+        <div class="form__group">
+          <div class="form__row">
+            <label class="form__label" for="firstName">First name</label>
+            <input class="form__field" id="firstName" name="firstName" type="text">
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="lastName">Last name</label>
+            <input class="form__field" id="lastName" name="lastName" type="text">
+          </div>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="emailAddress">Email address</label>
+          <input class="form__field" id="emailAddress" name="emailAddress" type="email">
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="subject">Subject</label>
+          <input class="form__field" id="subject" name="subject" type="text">
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__field form__field--textarea" id="message" name="message" type="text"></textarea>
+        </div>
+        
+        <div class="form__row">
+          
+          <div class="form__checkbox">
+            <input class="form__checkbox-field" type="checkbox" name="privacy" id="privacy">
+            <label class="form__checkbox-label" for="privacy">I have read the <a href="" class="form__checkbox-link">Privacy Policy</a> and I agree to receive the Newsletter.</label>
+          </div>
+
+        </div>
+        
+        <div class="form__row form__actions">
+          <input class="form__submit" type="submit" value="Submit">
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
