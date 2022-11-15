@@ -5,67 +5,95 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boarding Card v2</title>
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body class="page">
   <main class="page__main">
-    <article class="boarding-card">
+    <section class="boarding-card">
       <header class="boarding-card__header">
-        <h1 class="boarding-card__company">Alter</h1>
+        <div class="boarding-card__container">
+          <h1 class="boarding-card__company">Alter</h1>
 
-        <div class="boarding-card__location location boarding-card__location--from">
-          <h2 class="location__name"><span class="sr">From </span>Houston</h2>
-          <p class="location__code">HOU</p>
-          <time class="location__time">06:30</time>
-        </div>
+          <div class="boarding-card__location location boarding-card__location--from">
+            <h2 class="location__name p-xsmall"><span class="sr">From </span>Houston</h2>
+            <p class="location__code title-sm"><abbr title="Houston">HOU</abbr></p>
+            <time class="location__time p-small" datetime="06:30">06:30</time>
+          </div>
 
-        <div class="boarding-card__location location boarding-card__location--to">
-          <h2 class="location__name"><span class="sr">To </span>Centauri B</h2>
-          <p class="location__code">CEB</p>
-          <time class="location__time">23:30</time>
+          <div class="boarding-card__location location boarding-card__location--to">
+            <h2 class="location__name p-xsmall"><span class="sr">To </span>Centauri B</h2>
+            <p class="location__code title-sm"><abbr title="Centauri B">CEB</abbr></p>
+            <time class="location__time p-small" datetime="23:30">23:30</time>
+          </div>
         </div>
       </header>
       
-      <p class="boarding-card__info">
-        <p class="boarding-card__block boarding-card__block--full">
-          <span class="boarding-card__block-label">Passenger Name</span>
-          <span class="boarding-card__block-divider sr">: </span>
-          <span class="boarding-card__block-data">Maeve Droid Data</span>
-        </p>
-        <p class="boarding-card__block">
-          <span class="boarding-card__block-label">Terminal</span>
-          <span class="boarding-card__block-divider sr">: </span>
-          <span class="boarding-card__block-data">1</span>
-        </p>
-        <p class="boarding-card__block">
-          <span class="boarding-card__block-label">Gate</span>
-          <span class="boarding-card__block-divider sr">: </span>
-          <span class="boarding-card__block-data">K4</span>
-        </p>
-        <p class="boarding-card__block">
-          <span class="boarding-card__block-label">Seat</span>
-          <span class="boarding-card__block-divider sr">: </span>
-          <span class="boarding-card__block-data">1C</span>
-        </p>
-        <p class="boarding-card__block">
-          <span class="boarding-card__block-label">Date</span>
-          <span class="boarding-card__block-divider sr">: </span>
-          <time class="boarding-card__block-data">10/06/2152</time>
-        </p>
-        <p class="boarding-card__block">
-          <span class="boarding-card__block-label">Onboard</span>
-          <span class="boarding-card__block-divider sr">: </span>
-          <time class="boarding-card__block-data">05:30</time>
-        </p>
-        <p class="boarding-card__block">
-          <span class="boarding-card__block-label">Flight</span>
-          <span class="boarding-card__block-divider sr">: </span>
-          <span class="boarding-card__block-data">KP452</span>
-        </p>
+      <div class="boarding-card__info">
+        <div class="boarding-card__container">
+          <h2 class="boarding-card__passenger">Passenger info</h2>
+          <p class="boarding-card__block boarding-card__block--full">
+            <span class="boarding-card__block-label">Passenger Name</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <span class="boarding-card__block-data">Maeve Droid Data</span>
+          </p>
+          <p class="boarding-card__block">
+            <span class="boarding-card__block-label">Terminal</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <span class="boarding-card__block-data">1</span>
+          </p>
+          <p class="boarding-card__block">
+            <span class="boarding-card__block-label">Gate</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <span class="boarding-card__block-data">K4</span>
+          </p>
+          <p class="boarding-card__block">
+            <span class="boarding-card__block-label">Seat</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <span class="boarding-card__block-data">1C</span>
+          </p>
+          <p class="boarding-card__block">
+            <span class="boarding-card__block-label">Date</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <time class="boarding-card__block-data" datetime="2152-10-06">10/06/2152</time>
+          </p>
+          <p class="boarding-card__block">
+            <span class="boarding-card__block-label">Onboard</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <time class="boarding-card__block-data" datetime="05:30">05:30</time>
+          </p>
+          <p class="boarding-card__block">
+            <span class="boarding-card__block-label">Flight</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <span class="boarding-card__block-data">KP452</span>
+          </p>
+        </div>
       </div>
-      <aside class="boarding-card__summary">
+      <footer class="boarding-card__summary">
+        <div class="boarding-card__container">
+          <p class="boarding-card__block boarding-card__block--full">
+            <span class="boarding-card__block-label">Passenger Name</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <span class="boarding-card__block-data">Maeve Droid Data</span>
+          </p>
 
-      </aside>
-    </article>
+          <p class="boarding-card__block">
+            <span class="boarding-card__block-label">Flight</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <span class="boarding-card__block-data">KP452</span>
+          </p>
+
+          <p class="boarding-card__block">
+            <span class="boarding-card__block-label">Date</span>
+            <span class="boarding-card__block-divider sr">: </span>
+            <time class="boarding-card__block-data" datetime="2152-10-06">10/06/2152</time>
+          </p>
+
+          <div class="boarding-card__block">
+            <img src="assets/img/qrcode.png" alt="QR code" class="boarding-card__qr">
+          </div>
+        </div>
+      </footer>
+    </section>
   </main>
 </body>
 </html>

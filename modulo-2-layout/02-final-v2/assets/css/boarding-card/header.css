@@ -1,0 +1,44 @@
+.boarding-card__header .boarding-card__container {
+  grid-template-areas:
+  "logo . ."
+  "from . to";
+  row-gap: 177px;
+}
+
+
+.boarding-card__company {
+  margin: 0;
+  background: url(../../img/layout/brand.svg) left top no-repeat;
+  width: 98px;
+  height: 1px;
+  padding-top: 19px;
+  overflow: hidden;
+}
+
+.boarding-card__location {
+  text-align: center;
+}
+
+.boarding-card__location--from {
+  grid-area: from;
+}
+
+.boarding-card__location--to {
+  grid-area: to;
+}
+
+.location__name {
+  margin: 0;
+}
+.location__name::before {
+  content: '';
+  height: 24px;
+  width: 24px;
+  background: red;
+  display: block;
+  margin: 0 auto 4px;
+}
+
+.boarding-card__location--to .location__name::before {
+  background: blue;
+}

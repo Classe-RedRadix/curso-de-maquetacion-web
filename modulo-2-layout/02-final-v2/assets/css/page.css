@@ -1,0 +1,8 @@
+.page {
+  margin: 0;
+}
+.page__main {
+  min-height: 100vh;
+  display: flex;
+  padding: 20px;
+}

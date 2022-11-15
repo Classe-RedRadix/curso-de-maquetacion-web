@@ -1,0 +1,12 @@
+.boarding-card {
+  width: 100%;
+  max-width: 375px;
+  background: lime;
+  margin: auto;
+}
+
+.boarding-card__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px; 
+}
