@@ -1,5 +1,6 @@
 .page {
   margin: 0;
+  background-color: var(--color-neutral-400);
 }
 .page__main {
   min-height: 100vh;

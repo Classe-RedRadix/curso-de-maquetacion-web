@@ -1,0 +1,12 @@
+.boarding-card__block--full {
+  grid-column: span 3;
+}
+
+.boarding-card__block-label {
+  color: var(--color-primary-600);
+  text-transform: uppercase;
+  display: block;
+}
+.boarding-card__block-data {
+  color: var(--color-secondary-900);
+}

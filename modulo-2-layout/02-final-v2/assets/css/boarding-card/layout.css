@@ -1,12 +1,59 @@
 .boarding-card {
   width: 100%;
   max-width: 375px;
-  background: lime;
+  background-color: var(--color-neutral-100);
   margin: auto;
+  border-radius: 24px;
+  overflow: hidden;
 }
 
 .boarding-card__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px; 
+  row-gap: 28px;
+}
+
+.boarding-card__info,
+.boarding-card__summary {
+  padding: 48px 20px;
+}
+
+.boarding-card__divider {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 20px,
+    var(--color-secondary-900) 20px,
+    var(--color-secondary-900) 40px
+  );
+  height: 1px;
+  position: relative;
+}
+
+.boarding-card__divider::before,
+.boarding-card__divider::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-neutral-400);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+/* .boarding-card__divider::after {
+  left: unset;
+  right: 0;
+  transform: translate(50%,-50%);
+} */
+
+.boarding-card__divider::before {
+  left: 0;
+  transform: translate(-50%,-50%);
+}
+
+.boarding-card__divider::after {
+  right: 0;
+  transform: translate(50%,-50%);
 }

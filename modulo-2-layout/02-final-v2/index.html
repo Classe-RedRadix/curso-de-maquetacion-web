@@ -14,15 +14,15 @@
         <div class="boarding-card__container">
           <h1 class="boarding-card__company">Alter</h1>
 
-          <div class="boarding-card__location location boarding-card__location--from">
+          <div class="boarding-card__location location boarding-card__location--from boarding-card__location--earth">
             <h2 class="location__name p-xsmall"><span class="sr">From </span>Houston</h2>
-            <p class="location__code title-sm"><abbr title="Houston">HOU</abbr></p>
+            <p class="location__code title-sm"><abbr title="Houston" class="location__code-abbr">HOU</abbr></p>
             <time class="location__time p-small" datetime="06:30">06:30</time>
           </div>
 
-          <div class="boarding-card__location location boarding-card__location--to">
+          <div class="boarding-card__location location boarding-card__location--to boarding-card__location--planet">
             <h2 class="location__name p-xsmall"><span class="sr">To </span>Centauri B</h2>
-            <p class="location__code title-sm"><abbr title="Centauri B">CEB</abbr></p>
+            <p class="location__code title-sm"><abbr title="Centauri B" class="location__code-abbr">CEB</abbr></p>
             <time class="location__time p-small" datetime="23:30">23:30</time>
           </div>
         </div>
@@ -30,65 +30,66 @@
       
       <div class="boarding-card__info">
         <div class="boarding-card__container">
-          <h2 class="boarding-card__passenger">Passenger info</h2>
+          <h2 class="boarding-card__passenger sr">Passenger info</h2>
           <p class="boarding-card__block boarding-card__block--full">
-            <span class="boarding-card__block-label">Passenger Name</span>
+            <span class="boarding-card__block-label title-xs">Passenger Name</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <span class="boarding-card__block-data">Maeve Droid Data</span>
+            <span class="boarding-card__block-data p-default">Maeve Droid Data</span>
           </p>
           <p class="boarding-card__block">
-            <span class="boarding-card__block-label">Terminal</span>
+            <span class="boarding-card__block-label title-xs">Terminal</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <span class="boarding-card__block-data">1</span>
+            <span class="boarding-card__block-data p-default">1</span>
           </p>
           <p class="boarding-card__block">
-            <span class="boarding-card__block-label">Gate</span>
+            <span class="boarding-card__block-label title-xs">Gate</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <span class="boarding-card__block-data">K4</span>
+            <span class="boarding-card__block-data p-default">K4</span>
           </p>
           <p class="boarding-card__block">
-            <span class="boarding-card__block-label">Seat</span>
+            <span class="boarding-card__block-label title-xs">Seat</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <span class="boarding-card__block-data">1C</span>
+            <span class="boarding-card__block-data p-default">1C</span>
           </p>
           <p class="boarding-card__block">
-            <span class="boarding-card__block-label">Date</span>
+            <span class="boarding-card__block-label title-xs">Date</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <time class="boarding-card__block-data" datetime="2152-10-06">10/06/2152</time>
+            <time class="boarding-card__block-data p-default" datetime="2152-10-06">10/06/2152</time>
           </p>
           <p class="boarding-card__block">
-            <span class="boarding-card__block-label">Onboard</span>
+            <span class="boarding-card__block-label title-xs">Onboard</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <time class="boarding-card__block-data" datetime="05:30">05:30</time>
+            <time class="boarding-card__block-data p-default" datetime="05:30">05:30</time>
           </p>
           <p class="boarding-card__block">
-            <span class="boarding-card__block-label">Flight</span>
+            <span class="boarding-card__block-label title-xs">Flight</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <span class="boarding-card__block-data">KP452</span>
+            <span class="boarding-card__block-data p-default">KP452</span>
           </p>
         </div>
       </div>
+      <div class="boarding-card__divider"></div>
       <footer class="boarding-card__summary">
         <div class="boarding-card__container">
           <p class="boarding-card__block boarding-card__block--full">
-            <span class="boarding-card__block-label">Passenger Name</span>
+            <span class="boarding-card__block-label title-xs">Passenger Name</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <span class="boarding-card__block-data">Maeve Droid Data</span>
+            <span class="boarding-card__block-data p-default">Maeve Droid Data</span>
           </p>
 
           <p class="boarding-card__block">
-            <span class="boarding-card__block-label">Flight</span>
+            <span class="boarding-card__block-label title-xs">Flight</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <span class="boarding-card__block-data">KP452</span>
+            <span class="boarding-card__block-data p-default">KP452</span>
           </p>
 
           <p class="boarding-card__block">
-            <span class="boarding-card__block-label">Date</span>
+            <span class="boarding-card__block-label title-xs">Date</span>
             <span class="boarding-card__block-divider sr">: </span>
-            <time class="boarding-card__block-data" datetime="2152-10-06">10/06/2152</time>
+            <time class="boarding-card__block-data p-default" datetime="2152-10-06">10/06/2152</time>
           </p>
 
-          <div class="boarding-card__block">
+          <div class="boarding-card__block boarding-card__block--qr">
             <img src="assets/img/qrcode.png" alt="QR code" class="boarding-card__qr">
           </div>
         </div>

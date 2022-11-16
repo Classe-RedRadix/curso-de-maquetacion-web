@@ -1,3 +1,14 @@
+.boarding-card__summary .boarding-card__block--full {
+  grid-column: span 2;
+}
+
+
+.boarding-card__block--qr {
+  grid-row: 1 / span 2;
+  grid-column: 3 / 4;
+  align-self: end;
+}
+
 .boarding-card__qr {
   width: 100%;
   display: block;

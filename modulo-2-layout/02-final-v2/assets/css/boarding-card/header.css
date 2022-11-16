@@ -1,14 +1,28 @@
+.boarding-card__header {
+  background: url(/assets/img/layout/highlight-info.jpg) right top no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
 .boarding-card__header .boarding-card__container {
   grid-template-areas:
   "logo . ."
   "from . to";
   row-gap: 177px;
+  color: var(--color-neutral-100);
 }
 
+.boarding-card__header .boarding-card__container::before {
+  content: '';
+  background: url(/assets/img/layout/rocket.svg) center no-repeat;
+  background-size: 120px auto;
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+}
 
 .boarding-card__company {
   margin: 0;
-  background: url(../../img/layout/brand.svg) left top no-repeat;
+  background: url(/assets/img/layout/brand.svg) left top no-repeat;
   width: 98px;
   height: 1px;
   padding-top: 19px;
@@ -29,16 +43,25 @@
 
 .location__name {
   margin: 0;
+  color: var(--color-primary-500);
 }
 .location__name::before {
   content: '';
   height: 24px;
   width: 24px;
-  background: red;
+  background: url(/assets/img/layout/earth.svg) center no-repeat;
   display: block;
   margin: 0 auto 4px;
 }
 
-.boarding-card__location--to .location__name::before {
-  background: blue;
+.boarding-card__location--planet .location__name::before {
+  background-image: url(/assets/img/layout/planet.svg);
+}
+
+.location__code {
+  margin: 4px 0;
+}
+
+.location__code-abbr {
+  text-decoration: none;
 }
