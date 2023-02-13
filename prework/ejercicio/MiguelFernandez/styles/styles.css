@@ -1,0 +1,77 @@
+@import url(normalize.css);
+@import url(vars.css);
+
+body {
+    background-color: var(--grey-background);
+}
+
+.maeve-card {
+    box-sizing: border-box;
+    color: var(--blue-text);
+    font-family: 'Poppins';
+    margin: auto;
+    max-width: 21rem;
+}
+
+.maeve-card__info {
+    background-color: var(--pink-card);
+    padding: 1rem 1.5rem 2.5rem;
+}
+
+.maeve-card__title {
+    font-family: 'Italiana';
+    font-size: 3.75rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+
+.maeve-card__image {
+    border-radius: 1rem 1rem 0 0;
+    display: block;
+    overflow: hidden;
+}
+
+.maeve-card__image img {
+    display: block;
+    max-width: 100%;
+}
+
+.maeve-card__text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+}
+
+.maeve-card__button {
+    background-color: var(--blue-text);
+    border-width: 0;
+    color: var(--pink-card);
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: .125rem;
+    line-height: 1.333;
+    padding: .75rem 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+@media screen and (min-width: 48rem) {
+    .maeve-card {
+        max-width: 39.25rem;
+    }
+    .maeve-card__info {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .maeve-card__button {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: auto;
+    }
+    .maeve-card__image {
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+}
