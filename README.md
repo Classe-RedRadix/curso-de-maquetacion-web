@@ -51,3 +51,6 @@ Para realizar el curso de maquetación necesitas tener instalado en tu ordenador
 - NodeJS: [breve guía de instalación](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/herramienta-nodejs.md).
 - Un editor de código: puedes utilizar el que quieras, te recomendamos [VS Code](https://code.visualstudio.com/download).
 
+## ¿Por dónde debo continuar?
+
+Antes de empezar el curso te pedimos que leas [la sección de prework](./prework).
