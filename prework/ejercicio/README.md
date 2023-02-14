@@ -1,4 +1,4 @@
-# Prework: Ejercicio
+# Prework - Ejercicio
 
 Si has llegado hasta aquí, ¡enhorabuena! Eso significa que estás un paso más cerca de empezar el curso.
 

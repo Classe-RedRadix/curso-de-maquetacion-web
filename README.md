@@ -40,7 +40,7 @@ Más info sobre este curso en [nuestra web](https://www.classe.dev/cursos/maquet
 - [Módulo 3 - Efectos](/modulo-3-efectos/README.md)
   - [Ejercicio](/modulo-3-efectos/ejercicio/README.md)
 - [Módulo 4 - Extra](/modulo-4-extra/README.md)
-- [Proyecto final](/proyecto-final/README.md)
+- [Ejercicio final](/ejercicio-final/README.md)
 
 ## Requerimientos de software
 
