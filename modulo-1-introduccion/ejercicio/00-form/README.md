@@ -1,4 +1,4 @@
-# Módulo 2 - Ejercicio
+# Módulo 1 - Ejercicio
 
 Este proyecto esta construido con [`Parceljs`](https://parceljs.org/getting-started/webapp/).
 
