@@ -8,7 +8,7 @@
 - [Objetivos del curso](#objetivos-del-curso)
 - [Contenidos del curso](#contenido-del-curso)
 - [Requerimientos de software](#requerimientos-de-software)
-- [¿Por dónde debo continuar?](#por-dónde-debo-continuar)
+- [¿Por dónde debo empezar?](#por-dónde-debo-empezar)
 
 ## Sobre este curso
 
@@ -50,12 +50,13 @@ Para realizar el curso de maquetación necesitas tener instalado en tu ordenador
 - NodeJS: [breve guía de instalación](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/herramienta-nodejs.md).
 - Un editor de código: puedes utilizar el que quieras, te recomendamos [VS Code](https://code.visualstudio.com/download).
 
-## ¿Por dónde debo continuar?
+## ¿Por dónde debo empezar?
 
 Si estás inscrito en el curso te pedimos que **durante la semana previa al inicio del mismo hagas los siguientes pasos**:
 
 - Lee [los contenidos comunes a todos los cursos de Classe](https://github.com/Classe-Redradix/curso-contenidos-comunes) donde te explicamos los requerimientos técnicos que necesitas, cómo trabajamos a través de Slack o cómo puedes entregar tus ejercicios.
 - Lee [la sección de prework](./prework). En esta sección tenemos recursos para que te pongas al día. El objetivo es que todos los alumnos del curso empecéis con un nivel similar.
 - Haz el [ejercicio del prework que te proponemos](./prework/ejercicio). Tiene el mismo objetivo, nivelar los conocimientos de todos los alumnos para que las clases fluyan mejor.
+- Por último, estate atento al canal de Slack del curso y espera al primer día de clase.
 
 En cualquier momento **puedes preguntar todas tus dudas en el canal de Slack** del curso. Nuestro profesor y el resto del personal de Classe te ayudará a resolverlas.
