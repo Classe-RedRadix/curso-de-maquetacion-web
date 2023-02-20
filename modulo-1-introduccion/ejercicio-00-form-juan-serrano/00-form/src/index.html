@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Card</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <main class="total">
+      <section class="layoutForm">
+        <div class="col">
+          <h2 class="title-s">Keep in touch</h2>
+          <p class="body-m">Get news and updates as soon as they are announced: preorders, new trailers, new features and much more!</p>
+          <form action="POST" class="form">
+            <div class="itemForm --x2">
+              <label for="name">First Name</label>
+              <input type="text" id="name" placeholder="Your name">
+            </div>
+            <div class="itemForm --x2">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Your last name">
+            </div>
+            <div class="itemForm --x1">
+              <label for="email">Email address</label>
+              <input type="email" id="email" placeholder="Write your email">
+            </div>
+            <div class="itemForm --x1">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Write your subject">
+            </div>
+            <div class="itemForm --x1">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Write your message"></textarea>
+            </div>
+            <div class="itemForm --x1 itemForm__check">
+              <input type="checkbox" value="" id="form-legal">
+              <label class="form-check-label" for="form-legal">
+                I have read the
+                <a href="/#" target="_blank">Privacy Policy </a>and I agree to
+                receive the Newsletter.
+              </label>
+
+            </div>
+            <div class="itemForm --x1 --checkbox">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+        <div class="col">
+          <img src="assets/images/form-image.jpg" alt="">
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
