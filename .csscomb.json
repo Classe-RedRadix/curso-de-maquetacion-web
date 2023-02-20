@@ -27,7 +27,6 @@
     [
       "-webkit-font-smoothing",
       "-moz-osx-font-smoothing",
-
       "-moz-animation",
       "-moz-animation-delay",
       "-moz-animation-direction",

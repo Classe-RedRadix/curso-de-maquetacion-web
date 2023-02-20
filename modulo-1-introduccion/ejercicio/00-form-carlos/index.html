@@ -10,39 +10,41 @@
 <body class="kit">
 	<main class="kit__main">
 		<section class="kit__contact">
-			<header class="kit__contact-header">
-				<h1 class="kit__title">Keep in touch</h1>
-				<p class="kit__summary">Get news and updates as soon as they are announced: preorders, new trailers, new features and much more!</p>
-			</header>
-			<form action="/sendcontact.php" method="POST" class="form">
-				<div class="form__row">
-					<label class="form__label" for="kitFirstName">First name</label>
-					<input class="form__field" type="text" id="kitFirstName" name="kitFirstName">
-				</div>
-				<div class="form__row">
-					<label class="form__label" for="kitLastName">Last name</label>
-					<input class="form__field" type="text" id="kitLastName" name="kitLastName">
-				</div>
-				<div class="form__row">
-					<label class="form__label" for="kitEmail">Email address</label>
-					<input class="form__field" type="email" id="kitEmail" name="kitEmail">
-				</div>
-				<div class="form__row">
-					<label class="form__label" for="kitSubject">Subject</label>
-					<input class="form__field" type="text" id="kitSubject" name="kitSubject">
-				</div>
-				<div class="form__row">
-					<label class="form__label" for="kitMessage">Message</label>
-					<textarea class="form__field form__field--textarea" id="kitMessage" name="kitMessage"></textarea>
-				</div>
-				<div class="form__row form__row--checkbox">
-					<input class="form__field form__field--checkbox" type="checkbox" id="kitPrivacy" name="kitPrivacy">
-					<label class="form__label form__label--checkbox" for="kitPrivacy">I have read the Privacy Policy and I agree to receive the Newsletter.</label>
-				</div>
-				<div class="form__row form__row--submit">
-					<input class="button" type="submit" id="kitSubmit" name="kitSubmit" value="Submit">
-				</div>
-			</form>
+			<div class="kit__contact-inner">
+				<header class="kit__contact-header">
+					<h1 class="kit__title">Keep in touch</h1>
+					<p class="kit__summary">Get news and updates as soon as they are announced: preorders, new trailers, new features and much more!</p>
+				</header>
+				<form action="/sendcontact.php" method="POST" class="kit__form form">
+					<div class="form__row">
+						<label class="form__label" for="kitFirstName">First name</label>
+						<input class="form__field" type="text" id="kitFirstName" name="kitFirstName">
+					</div>
+					<div class="form__row">
+						<label class="form__label" for="kitLastName">Last name</label>
+						<input class="form__field" type="text" id="kitLastName" name="kitLastName">
+					</div>
+					<div class="form__row">
+						<label class="form__label" for="kitEmail">Email address</label>
+						<input class="form__field" type="email" id="kitEmail" name="kitEmail">
+					</div>
+					<div class="form__row">
+						<label class="form__label" for="kitSubject">Subject</label>
+						<input class="form__field" type="text" id="kitSubject" name="kitSubject">
+					</div>
+					<div class="form__row">
+						<label class="form__label" for="kitMessage">Message</label>
+						<textarea class="form__field form__field--textarea" id="kitMessage" name="kitMessage"></textarea>
+					</div>
+					<div class="form__row form__row--checkbox">
+						<input class="form__field form__field--checkbox" type="checkbox" id="kitPrivacy" name="kitPrivacy">
+						<label class="form__label form__label--checkbox" for="kitPrivacy">I have read the Privacy Policy and I agree to receive the Newsletter.</label>
+					</div>
+					<div class="form__row form__row--submit">
+						<input class="button" type="submit" id="kitSubmit" name="kitSubmit" value="Try now">
+					</div>
+				</form>
+			</div>
 		</section>
 	</main>
 </body>
