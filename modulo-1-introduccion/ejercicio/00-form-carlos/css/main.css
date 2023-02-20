@@ -1,38 +1,40 @@
 /* Poppins-regular */
 @font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'),
-       url('../assets/fonts/poppins-v20-latin-regular.woff') format('woff');
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+	url('../assets/fonts/poppins-v20-latin-regular.woff') format('woff');
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../assets/fonts/poppins-v20-latin-600.woff2') format('woff2'),
-       url('../assets/fonts/poppins-v20-latin-600.woff') format('woff');
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../assets/fonts/poppins-v20-latin-600.woff2') format('woff2'),
+	url('../assets/fonts/poppins-v20-latin-600.woff') format('woff');
 }
+
 
 
 
 
 /* VARS */
 :root {
-  --default-font-size: 16;
-  --font-family: poppins, sans-serif;
-  --color-neutral-100: #fff;
-  --color-neutral-400: #e5e5e5;
-  --color-primary-500: #ffacff;
-  --color-primary-600: #cd98e4;
-  --color-primary-700: #a36eba;
-  --color-secondary-500: #ae70f6;
-  --color-secondary-700: #2a1385;
-  --color-secondary-800: #1f0a70;
-  --color-secondary-900: #1f005c;
+	--font-family: poppins, sans-serif;
+
+	--default-font-size: 16;
+	--color-neutral-100: #ffffff;
+	--color-neutral-400: #e5e5e5;
+	--color-primary-500: #ffacff;
+	--color-primary-600: #cd98e4;
+	--color-primary-700: #a36eba;
+	--color-secondary-500: #ae70f6;
+	--color-secondary-700: #2a1385;
+	--color-secondary-800: #1f0a70;
+	--color-secondary-900: #1f005c;
 }
 
 
@@ -41,11 +43,11 @@
 
 /* RESET */
 html {
-  font-size: 100%;
+	font-size: 100%;
 }
 input,
 textarea {
-  font: inherit;
+	font: inherit;
 }
 
 
@@ -54,62 +56,76 @@ textarea {
 
 /* LAYOUT */
 .kit {
-  background-color: var(--color-secondary-900);
-  color: var(--color-primary-500);
-  font-family: poppins, sans-serif;
+	background-color: var(--color-secondary-900);
+	color: var(--color-primary-500);
+	font-family: poppins, sans-serif;
 }
 
 
 
 
 /* FORM */
-.form__row {}
+
 
 /* FIELD */
-.form__field:not(.form__field--checkbox) {
 
-}
 
 
 /* CHECKBOX */
 .form__row--checkbox {
-  position: relative;
+	position: relative;
 }
 
 .form__row--checkbox .form__field {
-  position: absolute;
-  left: calc(4/var(--default-font-size)*1rem);
-  appearance: none;
-  outline: none;
-  width: calc(8/var(--default-font-size)*1rem);
-  height: calc(8/var(--default-font-size)*1rem);
-  top: 50%;
-  transform: translateY(-50%);
+	appearance: none;
+	height: calc(8/var(--default-font-size)*1rem);
+	left: calc(4/var(--default-font-size)*1rem);
+	outline: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: calc(8/var(--default-font-size)*1rem);
 }
 
 .form__row--checkbox .form__label {
-  position: relative;
-  padding-left: calc(24/var(--default-font-size)*1rem);
+	padding-left: calc(24/var(--default-font-size)*1rem);
+	position: relative;
 }
 
 .form__row--checkbox .form__label::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: url(../assets/img/checkbox-default.svg) center no-repeat var(--color-secondary-900);
-  width: calc(16/var(--default-font-size)*1rem);
-  height: calc(16/var(--default-font-size)*1rem);
+	background: url(../assets/img/checkbox-default.svg) center no-repeat var(--color-secondary-900);
+	content: '';
+	height: calc(16/var(--default-font-size)*1rem);
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: calc(16/var(--default-font-size)*1rem);
 }
 
 .form__row--checkbox .form__field:checked + .form__label::before {
-  background-image: url(../assets/img/checkbox-active.svg);
+	background-image: url(../assets/img/checkbox-active.svg);
 }
 
 .form__row--checkbox .form__field:focus + .form__label::before {
-  box-shadow: inset 0 0 0 1px var(--color-neutral-100);
+	box-shadow: inset 0 0 0 1px var(--color-neutral-100);
 }
 
 
-/* BOTTON */
+/* BUTTON */
+.button {
+	font-size: calc(18/var(--default-font-size)*1rem);
+	line-height: calc(24/var(--default-font-size)*1rem);
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 0;
+	border-radius: 0;
+	padding: calc(12/var(--default-font-size)*1rem) calc(32/var(--default-font-size)*1rem);
+	letter-spacing: calc(2/var(--default-font-size)*1rem);
+	background-color: var(--color-primary-500);
+	transition: background-color ease .3s;
+}
+
+.button:hover {
+	background-color: var(--color-primary-600);
+}
