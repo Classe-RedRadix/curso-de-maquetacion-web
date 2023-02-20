@@ -35,7 +35,6 @@
 	--color-secondary-700: #2a1385;
 	--color-secondary-800: #1f0a70;
 	--color-secondary-900: #1f005c;
-
 	--color-field-border: var(--color-primary-700);
 	--color-field-bg: var(--color-secondary-800);
 	--color-field-label: var(--color-primary-700);
@@ -63,16 +62,31 @@ textarea {
 	background-color: var(--color-secondary-900);
 	color: var(--color-primary-500);
 	font-family: poppins, sans-serif;
+	font-size: calc(16/var(--default-font-size)*1rem);
+	line-height: calc(24/var(--default-font-size)*1rem);
+	font-weight: 400;
 }
 
+/* HEADER */
+.kit__contact-header {
+	margin-bottom: calc(40/var(--default-font-size)*1rem);
+}
+.kit__title {
+	font-size: calc(18/var(--default-font-size)*1rem);
+	line-height: inherith;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 0 calc(16/var(--default-font-size)*1rem);
+}
 
+.kit__summary {
+	font-size: calc(18/var(--default-font-size)*1rem);
+	line-height: calc(32/var(--default-font-size)*1rem);
+}
 
 
 /* FORM */
-.form {
-	font-size: calc(16/var(--default-font-size)*1rem);
-	line-height: calc(24/var(--default-font-size)*1rem);
-}
+
 .form__row:not(:last-child) {
 	margin-bottom: calc(24/var(--default-font-size)*1rem);
 }
@@ -85,20 +99,27 @@ textarea {
 }
 
 .form__field:not(.form__field--checkbox) {
-	caret-color: var(--color-primary-500);
-	display: block;
 	background-color: var(--color-field-bg);
 	border: 0;
 	border-bottom: 1px solid var(--color-field-border);
-	padding: 0 calc(16/var(--default-font-size)*1rem);
-	height: calc(56/var(--default-font-size)*1rem);
-	width: 100%;
 	box-sizing: border-box;
-	outline: none;
 	color: var(--color-neutral-100);
-	transition: background-color ease .3s;
+	display: block;
 	font-size: calc(16/var(--default-font-size)*1rem);
-	line-height: calc(24/var(--default-font-size)*1rem)
+	height: calc(56/var(--default-font-size)*1rem);
+	line-height: calc(24/var(--default-font-size)*1rem);
+	outline: none;
+	padding: 0 calc(16/var(--default-font-size)*1rem);
+	transition: background-color ease .3s;
+	width: 100%;
+
+	caret-color: var(--color-primary-500);
+}
+
+.form__field.form__field--textarea {
+	padding: calc(16/var(--default-font-size)*1rem);
+	height: calc(128/var(--default-font-size)*1rem);
+	resize: vertical;
 }
 
 .form__field:hover:not(.form__field--checkbox) {
