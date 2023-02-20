@@ -69,6 +69,10 @@ textarea {
 
 
 /* FORM */
+.form {
+	font-size: calc(16/var(--default-font-size)*1rem);
+	line-height: calc(24/var(--default-font-size)*1rem);
+}
 .form__row:not(:last-child) {
 	margin-bottom: calc(24/var(--default-font-size)*1rem);
 }
@@ -93,6 +97,8 @@ textarea {
 	outline: none;
 	color: var(--color-neutral-100);
 	transition: background-color ease .3s;
+	font-size: calc(16/var(--default-font-size)*1rem);
+	line-height: calc(24/var(--default-font-size)*1rem)
 }
 
 .form__field:hover:not(.form__field--checkbox) {
@@ -104,7 +110,7 @@ textarea {
 	--color-field-border: var(--color-primary-500);
 	--color-field-bg: var(--color-secondary-800);
 }
-.form__label:focus:not(.form__label--checkbox) {
+.form__row:focus-within {
 	--color-field-label: var(--color-primary-500);
 }
 
