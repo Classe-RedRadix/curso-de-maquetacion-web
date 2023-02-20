@@ -5,14 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Keep in touch</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="kit">
   <main class="kit__main">
     <section class="kit__contact">
-      <form action="" class="form">
+      <header class="kit__contact-header">
         <h1 class="kit__title">Keep in touch</h1>
         <p class="kit__summary">Get news and updates as soon as they are announced: preorders, new trailers, new features and much more!</p>
-
+      </header>
+      <form action="/sendcontact.php" method="POST" class="form">
         <div class="form__row">
           <label class="form__label" for="kitFirstName">First name</label>
           <input class="form__field" type="text" id="kitFirstName" name="kitFirstName">
@@ -23,7 +25,7 @@
         </div>
         <div class="form__row">
           <label class="form__label" for="kitEmail">Email address</label>
-          <input class="form__field" type="text" id="kitEmail" name="kitEmail">
+          <input class="form__field" type="email" id="kitEmail" name="kitEmail">
         </div>
         <div class="form__row">
           <label class="form__label" for="kitSubject">Subject</label>
