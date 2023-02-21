@@ -1,6 +1,6 @@
 # Prework
 
-Para empezar el curso te recomendamos tener nociones básicas de HTML, CSS y Git. Te dejamos a continuación un listado de recursos para ponerte al día. No obstante, recuerda que estaremos a tu disposición para resolver cualquier duda previa al arranque del curso, 🙂.
+Para empezar el curso te recomendamos tener nociones básicas de HTML, CSS y Git. Te dejamos a continuación un listado de recursos para ponerte al día. No obstante, recuerda que estaremos a tu disposición para resolver cualquier duda previa al arranque del curso a través de Slack, 🙂.
 
 - HTML
   - [Estructura de una web](https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
