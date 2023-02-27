@@ -7,7 +7,7 @@ body {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
   body {
     
   }
@@ -16,7 +16,7 @@ body {
 main{
   padding-right: var(--spacing-xl);
 }
-@media (max-width: 767px) {
+@media (max-width: 960px) {
   main{
     padding: var(--spacing-xs);
   }
@@ -34,6 +34,15 @@ main{
   justify-content: flex-start;
 }
 
+.layoutForm .col{
+  /* width: 50%; */
+  flex-basis: 50%;
+}
+
+.layoutForm .col img{
+  width: 100%;
+  max-width: inherit;
+}
 
 .layoutForm h2.title-s{
   margin-bottom: var(--spacing-xs);
@@ -44,16 +53,20 @@ main{
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
   .layoutForm {
     flex-direction: column-reverse;
     gap: var(--spacing-l);
+  }
+  .layoutForm .col{
+    width: 100%;
+    flex-basis: 100%;
   }
 }
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
   .col:nth-child(2){
     width: calc(100% + 2rem);
     margin-left: -1rem;
@@ -136,7 +149,8 @@ main{
   transition: all 0.3s ease;
   border-color: var(--primary-500);
   outline: none;
-  font-family: var(--font-poppins);
+  background-color: red;
+
 }
 
 .itemForm input::placeholder,

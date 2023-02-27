@@ -1,4 +1,7 @@
 :root {
+  --breakpoint-md: 767px;
+
+
   --spacing-xxs: 0.5rem; /* 8px */
   --spacing-xs: 1rem; /* 16px */
   --spacing-s: 2rem; /* 32px */
