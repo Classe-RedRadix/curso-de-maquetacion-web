@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Boarding Pass</title>
+	<link rel="stylesheet" href="assets/css/core/fonts.css">
+	<link rel="stylesheet" href="assets/css/core/reset.css">
+	<link rel="stylesheet" href="assets/css/core/vars.css">
+	<link rel="stylesheet" href="assets/css/core/utils.css">
+	<link rel="stylesheet" href="assets/css/page/page.css">
+	<link rel="stylesheet" href="assets/css/page/grid.css">
+	<link rel="stylesheet" href="assets/css/card/header.css">
+	<link rel="stylesheet" href="assets/css/boarding-pass.css">
+</head>
+
+<body class="boarding-pass">
+	<main class="boarding-pass__viewer">
+		<article class="boarding-pass__card card">
+			<header class="boarding-pass__header">
+				<div class="boarding-pass__container">
+					<div class="boarding-pass__brand">
+						<img src="assets/img/brand.svg" alt="Marca de Alter S.A. con 4 ondas a la izquierda">
+					</div>
+					<h1 class="boarding-pass__title sr-only">Boarding Pass: Maeve Droid Data - Flight
+						KP452</h1>
+
+					<div class="boarding-pass__destination">
+						<div class="boarding-pass__location boarding-pass__location--from">
+							<h2 class="boarding-pass__location-name boarding-pass__location-name--earth">
+								Houston</h2>
+							<div class="boarding-pass__location-code">
+								<abbr title="Houston" class="boarding-pass__location-abbr">HOU</abbr>
+							</div>
+							<time datetime="2152-06-10T06:30:00">06:30</time>
+						</div>
+
+						<div class="boarding-pass__location boarding-pass__location--to">
+							<h2
+								class="boarding-pass__location-name boarding-pass__location-name--planet">
+								Centauri B</h2>
+							<div class="boarding-pass__location-code"><abbr title="Centauri B"
+									class="boarding-pass__location-abbr">CEB</abbr></div>
+							<time datetime="2152-06-10T23:30:00">23:30</time>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="boarding-pass__flight-data">
+				<div class="boarding-pass__container">
+					<h3 class="boarding-pass__section-title sr-only">Flight data</h3>
+					<p class="boarding-pass__item boarding-pass__item--full">
+						<span class="boarding-pass__label">Passenger Name</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<span class="boarding-pass__data">Maeve Droid Data</span>
+					</p>
+
+					<p class="boarding-pass__item">
+						<span class="boarding-pass__label">Terminal</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<span class="boarding-pass__data">1</span>
+					</p>
+
+					<p class="boarding-pass__item">
+						<span class="boarding-pass__label">Gate</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<span class="boarding-pass__data">K4</span>
+					</p>
+
+					<p class="boarding-pass__item">
+						<span class="boarding-pass__label">Seat</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<span class="boarding-pass__data">1C</span>
+					</p>
+
+					<p class="boarding-pass__item">
+						<span class="boarding-pass__label">Date</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<time class="boarding-pass__data" datetime="2152-06-10">10/06/2152</time>
+					</p>
+
+					<p class="boarding-pass__item">
+						<span class="boarding-pass__label">Onboard</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<time class="boarding-pass__data" datetime="2152-06-10T05:30">05:30</time>
+					</p>
+
+					<p class="boarding-pass__item">
+						<span class="boarding-pass__label">Flight</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<span class="boarding-pass__data">KP452</span>
+					</p>
+				</div>
+			</section>
+
+			<section class="boarding-pass__flight-summary">
+				<div class="boarding-pass__container">
+					<h3 class="boarding-pass__section-title sr-only">Flight summary</h3>
+					<p class="boarding-pass__item boarding-pass__item--big">
+						<span class="boarding-pass__label">Passenger Name</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<span class="boarding-pass__data">Maeve Droid Data</span>
+					</p>
+
+					<p class="boarding-pass__item">
+						<span class="boarding-pass__label">Flight</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<span class="boarding-pass__data">KP452</span>
+					</p>
+
+					<p class="boarding-pass__item">
+						<span class="boarding-pass__label">Date</span>
+						<span class="boarding-pass__divider sr-only">: </span>
+						<time class="boarding-pass__data" datetime="2152-06-10">10/06/2152</time>
+					</p>
+
+					<p class="boarding-pass__item boarding-pass__item--qr">
+						<img src="assets/img/qr/qrcode.png" alt="QR Code" class="boarding-pass__qr">
+					</p>
+				</div>
+			</section>
+
+		</article>
+	</main>
+</body>
+
+</html>

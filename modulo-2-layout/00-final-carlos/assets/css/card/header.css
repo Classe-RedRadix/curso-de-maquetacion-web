@@ -1,0 +1,68 @@
+/* HEADER */
+.boarding-pass__header {
+	background: url(../../img/boarding-pass-3x.jpg) center no-repeat;
+	background-size: cover;
+	color: var(--color-white);
+	padding: calc(20/var(--size)*1rem) 0;
+}
+
+.boarding-pass__header .boarding-pass__container {
+	grid-template-rows: auto auto;
+	row-gap: calc(177/var(--size)*1rem);
+}
+
+.boarding-pass__destination {
+	background: url(../../img/icons/rocket.svg) center no-repeat;
+	column-gap: calc(20/var(--size)*1rem);
+	display: grid;
+	grid-column: 1/4;
+	grid-row: 2/3;
+	grid-template-areas: "from . to";
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.boarding-pass__location {
+	line-height: calc(24/var(--size)*1rem);
+	text-align: center;
+}
+
+.boarding-pass__location--from {
+	grid-area: from;
+}
+
+.boarding-pass__location--to {
+	grid-area: to;
+}
+
+.boarding-pass__location-name {
+	color: var(--color-primary-500);
+	font-size: calc(12/var(--size)*1rem);
+	font-weight: 400;
+	line-height: calc(16/var(--size)*1rem);
+	margin: 0 0 calc(4/var(--size)*1rem);
+}
+
+.boarding-pass__location-name::before {
+	background: url(../../img/icons/earth.svg) center no-repeat;
+	content: '';
+	display: block;
+	height: calc(24/var(--size)*1rem);
+	margin: 0 auto calc(4/var(--size)*1rem);
+	width: calc(24/var(--size)*1rem);
+}
+
+
+.boarding-pass__location-name--planet::before {
+	background-image: url(../../img/icons/planet.svg);
+}
+
+.boarding-pass__location-code {
+	font-size: calc(18/var(--size)*1rem);
+	margin: 0 0 calc(4/var(--size)*1rem);
+}
+
+.boarding-pass__location-abbr {
+	font-size: calc(16/var(--size)*1rem);
+	font-weight: 600;
+	text-decoration: none;
+}

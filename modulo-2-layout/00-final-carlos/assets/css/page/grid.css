@@ -1,0 +1,7 @@
+.boarding-pass__container {
+	column-gap: calc(20/var(--size)*1rem);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0 calc(20/var(--size)*1rem);
+	row-gap: calc(28/var(--size)*1rem);
+}

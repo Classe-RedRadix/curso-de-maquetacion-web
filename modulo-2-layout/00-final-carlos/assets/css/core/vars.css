@@ -1,0 +1,10 @@
+/* VARS */
+:root {
+	--color-light-grey: #ededed;
+	--color-white: #fff;
+	--color-primary-500: #FFACFF;
+	--color-primary-600: #CD98E4;
+	--color-secondary-500: #1F005C;
+
+	--size: 16;
+}

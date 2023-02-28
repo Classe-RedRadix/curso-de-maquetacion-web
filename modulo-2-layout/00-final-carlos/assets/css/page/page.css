@@ -1,0 +1,11 @@
+/* PAGE */
+.boarding-pass {
+	background-color: var(--color-light-grey);
+	font-family: poppins, sans-serif;
+}
+
+.boarding-pass__viewer {
+	display: flex;
+	min-height: 100vh;
+	padding: calc(15/var(--size)* 1rem) 0;
+}
