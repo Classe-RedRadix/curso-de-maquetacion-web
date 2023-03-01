@@ -10,9 +10,37 @@
 
 
 
+.boarding-pass__flight-data::after {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: 0;
+	height: calc(1/var(--size)*1rem);
+	background: repeating-linear-gradient(to right, var(--color-white) 0, var(--color-white) 16px, var(--color-secondary-500) 16px,  var(--color-secondary-500) 30px);
+	width: 100%;
+}
+
+
+.boarding-pass__flight-summary::before,
+.boarding-pass__flight-summary::after {
+	content: '';
+	width: calc(39/var(--size)*1rem);
+	height: calc(39/var(--size)*1rem);
+	background-color: var(--color-light-grey);
+	position: absolute;
+	left:0;
+	top: 0;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.boarding-pass__flight-summary::after {
+	left: 100%;
+}
 
 .boarding-pass__flight-data,
 .boarding-pass__flight-summary {
+	position: relative;
 	padding: calc(48/var(--size)* 1rem) 0;
 }
 .boarding-pass__section-title {}
