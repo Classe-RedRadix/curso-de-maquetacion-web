@@ -1,0 +1,44 @@
+.planets {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left:0;
+	top: 0;
+	pointer-events: none;
+	z-index: 2;
+}
+
+.planet {}
+
+.planet--earth {
+	background: url(../../img/planets/earth.png) center no-repeat;
+	background-size: cover;
+	width: 120%;
+	aspect-ratio: 1;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	filter: drop-shadow(0 0 50px rgba(255,255,0, .4));
+	opacity:.4;
+	border-radius: 50%;
+}
+
+.planet--earth-active {
+	animation-name: earth;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+@keyframes earth {
+	from {
+		transform: translateX(-50%) translateY(0) rotate(0);
+	}
+	to {
+		transform: translateX(-50%) translateY(-25%) rotate(26deg);
+	}
+}

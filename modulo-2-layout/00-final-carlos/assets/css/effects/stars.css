@@ -1,0 +1,65 @@
+.stars {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left:0;
+	top: 0;
+	pointer-events: none;
+	z-index: 1;
+}
+
+
+.star {
+	position: absolute;
+	border-radius: 50%;
+	background: radial-gradient(circle at center, rgba(255,255,255,1) 0, rgba(255,255,255,0) 50%) ;
+	width: .25em;
+	height: .25em;
+	left: 100px;
+	top: 100px;
+
+}
+.star--1 {
+	animation-name: star1;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.star--2 {
+	left: 50%;
+	top: 50%;
+}
+.star--3 {
+	left: 70%;
+	top: 15%;
+	animation-name: star3;
+	animation-duration: 4s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes star1 {
+	from {
+		opacity: .5;
+		transform: scale(1.2);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1.9);
+	}
+}
+
+
+
+@keyframes star3 {
+	from {
+		opacity: .2;
+		transform: scale(1);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1.5);
+	}
+}

@@ -5,8 +5,16 @@
 	background-color: var(--color-white);
 	border-radius: calc(24/var(--size)* 1rem);
 	overflow: hidden;
+
+	transform: rotateX(5deg) rotateY(-45deg) rotateZ(-3deg) rotate(-5deg);
+
+	transition: transform ease .7s;
 }
 
+
+.boarding-pass:hover .boarding-pass__card {
+	transform: rotateX(0) rotateY(0) rotateZ(0) rotate(0);
+}
 
 
 

@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="assets/css/page/page.css">
 	<link rel="stylesheet" href="assets/css/page/grid.css">
 	<link rel="stylesheet" href="assets/css/card/header.css">
+	<link rel="stylesheet" href="assets/css/effects/stars.css">
+	<link rel="stylesheet" href="assets/css/effects/planets.css">
 	<link rel="stylesheet" href="assets/css/boarding-pass.css">
 </head>
 
@@ -20,6 +22,14 @@
 	<main class="boarding-pass__viewer">
 		<article class="boarding-pass__card card">
 			<header class="boarding-pass__header">
+				<div class="stars">
+					<div class="star star--1"></div>
+					<div class="star star--2"></div>
+					<div class="star star--3"></div>
+				</div>
+				<div class="planets">
+					<div class="planet planet--earth"></div>
+				</div>
 				<div class="boarding-pass__container">
 					<div class="boarding-pass__brand">
 						<img src="assets/img/brand.svg" alt="Marca de Alter S.A. con 4 ondas a la izquierda">
@@ -125,6 +135,18 @@
 
 		</article>
 	</main>
+
+	<script>
+		const body = document.querySelector('body');
+		const earth = body.querySelector('.planet--earth');
+
+		body.addEventListener('mouseover', () => {
+			earth.classList.add('planet--earth-active');
+		})
+
+
+
+	</script>
 </body>
 
 </html>

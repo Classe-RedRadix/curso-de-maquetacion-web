@@ -51,7 +51,7 @@ body {
 
 @keyframes diamond-position {
   from {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   to {
     transform: translateY(-31px);
@@ -80,6 +80,6 @@ body {
     transform: rotateX(62deg) rotateY(28deg) rotateZ(0deg);
   }
   to {
-    transform: rotateX(62deg) rotateY(28deg) rotateZ(360deg);
+    transform: rotateX(62deg) rotateY(28deg) rotateZ(0);
   }
 }

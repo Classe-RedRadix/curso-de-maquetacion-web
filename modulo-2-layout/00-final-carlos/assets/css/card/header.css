@@ -4,22 +4,59 @@
 	background-size: cover;
 	color: var(--color-white);
 	padding: calc(20/var(--size)*1rem) 0;
+	position: relative;
 }
 
 .boarding-pass__header .boarding-pass__container {
 	grid-template-rows: auto auto;
 	row-gap: calc(177/var(--size)*1rem);
+	position: relative;
+	z-index: 3;
 }
 
 .boarding-pass__destination {
-	background: url(../../img/icons/rocket.svg) center no-repeat;
 	column-gap: calc(20/var(--size)*1rem);
 	display: grid;
 	grid-column: 1/4;
 	grid-row: 2/3;
 	grid-template-areas: "from . to";
 	grid-template-columns: 1fr 1fr 1fr;
+	position: relative;
 }
+
+.boarding-pass__destination::before,
+.boarding-pass__destination::after {
+	content: '';
+	position: absolute;
+	width: 111px;
+	height: 25px;
+	background: url(../../img/icons/rocket.svg) left center no-repeat;
+	left: 98px;
+	top: 38px;
+}
+
+.boarding-pass__destination::after {
+	background-position: right center;
+	width: 25px;
+	left: 212px;
+
+	animation-name: rocket;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+
+@keyframes rocket {
+	from {
+		transform: translateY(-1px);
+	}
+	to {
+		transform: translateY(1px);
+	}
+}
+
 
 .boarding-pass__location {
 	line-height: calc(24/var(--size)*1rem);
