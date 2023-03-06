@@ -1,0 +1,19 @@
+.header {
+    color: var(--secondary-900);
+}
+
+.newspaper {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--font-poppins);
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: url(../assets/img/background.svg) top;
+    background-size:cover;
+}
+
+img {
+    max-width: 100%;
+}
