@@ -110,7 +110,7 @@ hr{
 
 /* MEDIA QUERY */
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 1440px) {
 
     .newspaper__main
     {
