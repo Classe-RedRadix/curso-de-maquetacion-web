@@ -1,0 +1,3 @@
+- comprimir imagenes con CUFON fonts
+- cargar las fuentes con google font helper
+- semantic html, repasar Hs y demás

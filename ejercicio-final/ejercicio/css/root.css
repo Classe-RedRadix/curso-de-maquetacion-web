@@ -1,0 +1,82 @@
+:root {
+    --neutral-100: #FFFFFF;
+    --neutral-400: #E5E5E5;
+    --primary-500: #FFACFF;
+    --primary-600: #CD98E4;
+    --primary-700: #A36EBA;
+    --secondary-500: #AE70F6;
+    --secondary-700: #2A1385;
+    --secondary-800: #1F0A70;
+    --secondary-900: #1F005C;
+    --font-size-base: 16;
+}
+
+@font-face {
+    font-family: "Italiana";
+    src: url('../fonts/Italiana-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins-Italic.ttf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+html {
+    color: var(--secondary-800);
+    font-family: "Poppins", sans-serif;
+    font-size: calc(var(--font-size-base/var(--font-size-base) * 1rem));
+    line-height: calc(24/var(--font-size-base) * 1rem);
+}
+
+/*---------------------- Title sizes --------------------------*/
+
+.title-huge {
+    font-family: "Italiana", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: calc(86/var(--font-size-base) * 1rem);
+    line-height: calc(96/var(--font-size-base) * 1rem);
+    color: var(--secondary-900);
+}
+
+.title-big {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-size: calc(60/var(--font-size-base) * 1rem);
+    line-height: calc(72/var(--font-size-base) * 1rem);
+}
+
+/*---------------------- Text sizes --------------------------*/
+
+.text-big {
+    font-size: calc(20/var(--font-size-base) * 1rem);
+    line-height: calc(32/var(--font-size-base) * 1rem);
+}
+
+.text-default {
+    font-size: calc(18/var(--font-size-base) * 1rem);
+    line-height: calc(32/var(--font-size-base) * 1rem);
+}
+
+.text-small {
+    font-size: calc(16/var(--font-size-base) * 1rem);
+    line-height: calc(24/var(--font-size-base) * 1rem);
+}
