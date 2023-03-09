@@ -1,0 +1,288 @@
+:root {
+    --blue-text-01: #1f005c;
+    --blue-text-02: #1f0a70;
+}
+
+body {
+    background-color: #e5e5e5;
+    color: var(--blue-text-02);
+    font-family: 'Poppins';
+}
+
+h1,
+h2 {
+    font-family: 'Italiana';
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+.newspaper-wrapper {
+    padding: 2.5rem 1.25rem;
+}
+
+.newspaper-header {
+    color: var(--blue-text-01);
+    margin-bottom: 2.5rem;
+}
+
+.newspaper-header__title {
+    font-size: 5.375rem;
+    font-weight: 400;
+    line-height: 1.1162;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.newspaper-header__info {
+    border: solid .0625rem var(--blue-text-01);
+    border-left-width: 0;
+    border-right-width: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .25rem;
+    padding-top: .25rem;
+}
+
+.newspaper-header__info > * {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 6.375rem;
+}
+
+.newspaper__main-title {
+    font-size: 3.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.newspaper-news--border,
+.newspaper-news-list li {
+    border-bottom: solid .0625rem var(--blue-text-01);
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.newspaper-news-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.newspaper-news-list h2 {
+    font-family: 'Poppins';
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.newspaper-news p {
+    margin-bottom: 1rem;
+}
+
+.newspaper-news figcaption {
+    font-size: .75rem;
+    line-height: 1.333;
+    margin-top: .25rem;
+}
+
+.newspaper__intro {
+    font-family: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+}
+
+.newspaper-comercial {
+    background-color: white;
+    border: solid .0625rem var(--blue-text-01);
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    padding: 8.125rem 1.5rem 21rem;
+    position: relative;
+}
+
+.newspaper-comercial::after,
+.newspaper-comercial::before {
+    background-position: center top;
+    background-repeat: no-repeat;
+    content: '';
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+}
+
+.newspaper-comercial::before {
+    background-image: url('assets/bottom-top.svg');
+    background-size: cover;
+    height: 5.125rem;
+    top: 0;
+}
+
+.newspaper-comercial::after {
+    background-image: url('assets/bottom-bg.svg'), linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 32%, rgba(163,110,186,1) 32%, rgba(163,110,186,1) 100%);
+    background-position: center 0;
+    background-size: contain;
+    bottom: 0;
+    display: block;
+    height: 16rem;
+}
+
+.newspaper-comercial h2 {
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.55;
+    margin-bottom: 1.625rem;
+}
+
+.newspaper-comercial h3 {
+    font-family: 'Italiana';
+    font-size: 3.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.newspaper-balcony--two-columns .newspaper-news:first-child {
+    margin-bottom: 2.5rem;
+}
+
+.newspaper-balcony--two-columns .newspaper-news:first-child h2 {
+    font-family: 'Poppins';
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.newspaper-balcony--two-columns .newspaper-news:first-child h3 {
+    font-size: .875rem;
+    text-transform: uppercase;
+    transform: rotateZ(-9deg);
+}
+
+.newspaper-news--rotated-text {
+    align-items: center;
+    border: solid .0625rem var(--blue-text-01);
+    height: 8.75rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.newspaper-news--rotated-text::before {
+    background-image: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,1) 66%, rgba(169,120,191,0.1) 66%, rgba(169,120,191,0.1) 100%);
+    background-repeat: repeat-y;
+    background-size: 100% 3.375rem;  
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    transform: rotateZ(-9deg);
+    width: 110%;
+}
+
+.newspaper-news__image {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 80rem) {
+
+    .newspaper-wrapper {
+        box-sizing: content-box;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 78.5rem;
+    }
+
+    .newspaper-header__info > * {
+        width: auto;
+    }
+
+    .newspaper-news--main-article {
+        column-gap: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .newspaper-news--main-article h2 {
+        grid-column: span 2;
+    }
+
+    .newspaper-news--main-article figure {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
+
+    .newspaper-balcony--three-columns {
+        align-items: flex-start;
+        column-gap: 1.5rem;
+        display: flex;
+    }
+
+    .newspaper-balcony--three-columns .newspaper-news {
+        border-bottom: solid .0625rem var(--blue-text-01);
+        max-width: 32.5rem;
+        padding-bottom: 6rem;
+    }
+
+    .newspaper-balcony--three-columns .newspaper-news-list {
+        max-width: 25.625rem;
+    }
+
+    .newspaper-comercial {
+        margin-top: 0;
+    }
+
+    .newspaper-comercial h2 {
+        font-size: 2.25rem;
+    }
+
+    .newspaper-comercial h3 {
+        font-size: 3.5rem;
+    }
+
+    .newspaper-comercial::before {
+        background-size: contain;
+    }
+
+    .newspaper-comercial::after {
+        height: 13rem;
+    }
+
+    .newspaper-news-list {
+        margin-top: 0;
+    }
+
+    .newspaper-news__intro {
+        line-height: 2;
+    }
+
+    .newspaper-balcony--two-columns {
+        column-gap: 4.125rem;
+        display: flex;
+    }
+
+    .newspaper-balcony--two-columns .newspaper-news:first-child {
+        border-right: solid .0625rem var(--blue-text-01);
+        min-width: 32.5rem;
+        padding-right: 4.125rem;
+    }
+
+    .newspaper-two-columns-text {
+        column-count: 2;
+    }
+
+}
