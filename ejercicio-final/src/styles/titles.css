@@ -1,0 +1,22 @@
+.title-large{
+    font-family: var(--font-italiana);
+    font-weight: 100;
+    font-size: 5rem; /* 80px */
+    line-height: 6rem;
+}
+
+.header {
+    color: var(--secondary-900);
+}
+
+.header .title-large {
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .title-large {
+        font-size: 8.75rem; /* 140px */
+        line-height: 9.75rem;
+    }
+}

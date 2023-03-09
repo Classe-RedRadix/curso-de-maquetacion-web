@@ -1,0 +1,20 @@
+body {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--font-poppins);
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--background-body);
+}
+
+.newspaper {
+    max-width: 80rem;
+    margin: 0 auto;
+    color: var(--secondary-800);
+    padding: var(--spacing-m) 2.5%;
+}
+
+.header{
+}
