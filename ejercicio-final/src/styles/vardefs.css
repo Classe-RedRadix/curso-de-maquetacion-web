@@ -12,5 +12,11 @@
     --font-poppins: 'Poppins', sans-serif;
     --font-italiana: 'Italiana', serif;
 
+    --spacing-xxs: 0.5rem; /* 8px */
+    --spacing-xs: 1rem; /* 16px */
+    --spacing-s: 2rem; /* 32px */
     --spacing-m: 3rem; /* 48px */
+    --spacing-l: 4rem; /* 64px */
+    --spacing-xl: 6rem; /* 96px */
+    --spacing-xxl: 8rem; /* 128px */
 }
