@@ -1,0 +1,285 @@
+.newspaper__content {
+    max-width: 1440px;
+    margin: 0 auto;
+    color: var(--secondary-800);
+    padding: var(--spacing-m) 2.5%;
+}
+
+
+
+/***** HEADER *****/
+.newspaper__header {
+    color: var(--secondary-900);
+}
+
+.newspaper__header-title {
+    text-align: center;
+    font-family: var(--font-italiana);
+    font-weight: 100;
+    font-size: 86px;
+    line-height: 96px;
+}
+
+.newspaper__header-info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--secondary-900);
+    border-bottom: 1px solid var(--secondary-900);
+    padding: var(--spacing-xxs);
+    margin-top: var(--spacing-s);
+}
+
+@media (min-width: 600px) {
+    .newspaper__header-title {
+        font-size: 140px;
+        line-height: 156px;
+    }
+}
+
+
+
+
+/**** GRID ****/
+
+.header-section {
+    grid-area: header-section;
+}
+
+.content-climate {
+    grid-area: content-climate;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.content-wolves {
+    grid-area: content-wolves;
+}
+
+.content-nasa {
+    grid-area: content-nasa;
+}
+
+.section2 {
+    grid-area: section2;
+}
+
+.section3 {
+    grid-area: section3;
+}
+
+
+@media (min-width: 48rem) {
+    .newspaper__main {
+        display: grid;
+        grid-template-columns: 1.25fr 1.75fr;
+        grid-template-rows: min-content;
+        gap: 0px 0px;
+
+        grid-template-areas:
+            'header-section header-section'
+            'section2 section2'
+            'section2 section2'
+            'section3 section3';
+    }
+
+    .newspaper__section {
+        display: grid;
+        grid-template-columns: 1.25fr 1.75fr;
+        grid-template-rows: min-content;
+        gap: 0px 0px;
+    }
+
+    .section2 {
+        grid-template-areas:
+            'content-climate content-climate'
+            'aside aside'
+
+    }
+
+    .section3 {
+        grid-template-areas:
+            'content-wolves content-nasa';
+        gap: 6rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .newspaper__main {
+        grid-template-areas:
+            'header-section header-section'
+            'section2 section2'
+            'section2 section2'
+            'section3 section3';
+    }
+
+    .section2 {
+        grid-template-areas:
+            'content-climate aside'
+    }
+
+    .section3 {
+        grid-template-areas:
+            'content-wolves content-nasa';
+        gap: 10rem;
+    }
+}
+
+
+
+
+/**** ARTICLE ****/
+
+.newspaper .header-section, .content-climate, .aside article {
+    border-bottom: 1px solid var(--secondary-800);
+    padding: var(--spacing-s) 0;
+    height: min-content;
+}
+
+@media (min-width: 47.9rem) {
+    .newspaper .header-section article {
+        padding: var(--spacing-xs) 0;
+    }
+}
+
+.newspaper article .article__title {
+    margin-bottom: var(--spacing-xs);
+}
+
+.article__title {
+    font-family: var(--font-italiana);
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+@media (min-width: 600px) {
+    .article__title {
+        font-size: 80px;
+        line-height: 96px;
+    }
+}
+
+.article__subtitle {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+
+
+
+/**** SECTIONS *****/
+
+.newspaper .article__text p+p {
+    margin-top: var(--spacing-xs);
+}
+
+
+
+
+
+/**** HEADER SECTION ****/
+
+@media (min-width: 62rem) {
+    .header-section article {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+@media (min-width: 62rem) {
+    .header-section .article__text {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 62rem) {
+    .header-section .content-col {
+        flex-basis: 70%;
+    }
+}
+
+
+
+
+/***** SECTION 1 *****/
+
+.content-climate .article__text {
+    margin-top: var(--spacing-s);
+}
+
+
+
+
+
+/**** ASIDE ****/
+
+@media (min-width: 48rem) {
+    .aside {
+        margin-left: var(--spacing-s);
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+    }
+}
+
+.newspaper article .article__small-title {
+    margin-bottom: 24px;
+}
+
+.article__small-title {
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.article__small-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (min-width: 48rem) {
+    .aside article {
+        margin-left: var(--spacing-s);
+    }
+}
+
+.aside img {
+    margin: var(--spacing-s) auto;
+    display: block;
+    background-color: rgba(255,255,255, 0.4);
+}
+
+
+/***** SECTION 3 *****/
+
+.section3 article {
+    padding-top: var(--spacing-s);
+}
+
+.content-wolves img {
+    margin-top: var(--spacing-s);
+    background-color: rgba(246, 241, 248, 0.4);
+}
+
+.content-nasa img {
+    margin-top: var(--spacing-s);
+    margin-bottom: var(--spacing-s);
+}
+
+@media (min-width: 48rem) {
+    .content-nasa .article__text {
+        column-count: 2;
+    }
+
+    .newspaper .content-nasa {
+        border-left: 1px solid var(--secondary-800);
+        padding-left: var(--spacing-l);
+    }
+}
