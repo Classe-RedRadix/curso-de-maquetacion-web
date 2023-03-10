@@ -1,0 +1,29 @@
+@import './mixins';
+@import './variables';
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body {
+  margin: 40px 20px;
+  @include tablet {
+    margin: 40px 80px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}

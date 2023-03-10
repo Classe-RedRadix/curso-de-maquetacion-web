@@ -1,0 +1,143 @@
+@import './mixins';
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+h1 {
+  font-family: 'Italiana', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 86px;
+  line-height: 96px;
+  color: $secondary-800;
+  @include tablet {
+    font-size: 140px;
+    line-height: 156px;
+  }
+}
+
+h2 {
+  font-family: 'Italiana', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  color: $secondary-800;
+  @include tablet {
+    font-size: 80px;
+    line-height: 96px;
+  }
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: $secondary-800;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: $secondary-800;
+}
+
+.text__big {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $secondary-800;
+  @include tablet {
+    font-size: 22px;
+  }
+}
+
+.text__default {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: $secondary-800;
+}
+
+.text__small {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $secondary-800;
+}
+
+.text__xs {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $secondary-800;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.highlight {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 40px;
+  color: $secondary-800;
+}
+
+button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button__primary--dark {
+  background-color: $secondary-800;
+  color: $primary-500;
+
+  &:hover {
+    background-color: $secondary-700;
+  }
+}
+
+.button__primary--light {
+  background-color: $primary-500;
+  color: $secondary-800;
+
+  &:hover {
+    background-color: $primary-600;
+  }
+}
+
+figcaption {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $secondary-800;
+}
