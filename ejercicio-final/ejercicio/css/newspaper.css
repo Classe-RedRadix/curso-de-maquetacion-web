@@ -1,0 +1,106 @@
+body {
+    background-image: url("../assets/Texture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--neutral-400);
+}
+
+.newspaper {
+    padding: calc(40/var(--font-size-base) * 1rem) calc(20/var(--font-size-base) * 1rem);
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: calc(40/var(--font-size-base) * 1rem);
+}
+
+.navbar {
+    border-top: 2px solid var(--secondary-900);
+    border-bottom: 2px solid var(--secondary-900);
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: calc(8/var(--font-size-base) * 1rem);
+}
+
+.navbar__list-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 1rem;
+    color: var(--secondary-900);
+}
+
+.featured, .central {
+    padding: calc(48/var(--font-size-base) * 1rem) 0;
+    border-bottom: 2px solid var(--secondary-900);
+}
+
+.featured__article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-title {
+    padding-bottom: calc(16/var(--font-size-base) * 1rem);
+}
+
+.featured__image {
+    order: 3;
+    margin-top: calc(8/var(--font-size-base) * 1rem);
+}
+
+.legend {
+    font-size: calc(12/var(--font-size-base) * 1rem);
+    line-height: calc(16/var(--font-size-base) * 1rem);
+}
+
+.central__content {
+    padding-bottom: calc(24/var(--font-size-base) * 1rem);
+}
+
+.small-news {
+    padding-top: calc(4/var(--font-size-base) * 1rem);
+}
+
+.small-article {
+    padding: calc(36/var(--font-size-base) * 1rem) 0;
+    border-bottom: 2px solid var(--secondary-900);
+}
+
+.small-article:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.small-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: calc(18/var(--font-size-base) * 1rem);
+    line-height: calc(24/var(--font-size-base) * 1rem);
+    letter-spacing: calc(2/var(--font-size-base) * 1rem);
+    text-transform: uppercase;
+    margin-bottom: calc(24/var(--font-size-base) * 1rem);
+}
+
+.small-article__text {
+    margin-bottom: 0;
+}
+
+.final-left {
+    padding: calc(38/var(--font-size-base) * 1rem) 0;
+}
+
+.final-left__content {
+    margin-bottom: calc(34/var(--font-size-base) * 1rem);
+}
+
+.final-article-title {
+    padding-bottom: calc(24/var(--font-size-base) * 1rem);
+}
+
+.final-article-image {
+    margin-bottom: calc(24/var(--font-size-base) * 1rem);
+}
