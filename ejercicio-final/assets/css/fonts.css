@@ -1,0 +1,87 @@
+/* FONTS */
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Italiana';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/italiana-v16-latin-regular.woff2') format('woff2'), 
+         url('../fonts/italiana-v16-latin-regular.woff') format('woff'); 
+  }
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), 
+         url('../fonts/poppins-v20-latin-regular.woff') format('woff'); 
+  }
+
+
+  /* FONT STYLES */
+
+  .newspaper__fontstyle_italiana_main_title{
+
+    font-family: Italiana, sans-serif;
+
+    font-size: calc(86/var(--default-font-size)*1rem);
+    line-height: calc(96/var(--default-font-size)*1rem);
+    color: var(--color-secondary-900);
+  }
+  
+
+  .newspaper__fontstyle_italiana_title{
+
+    font-family: Italiana, sans-serif;
+
+    font-size: calc(60/var(--default-font-size)*1rem);
+    line-height: calc(72/var(--default-font-size)*1rem);
+    color: var(--color-secondary-800);
+
+  }
+  
+
+  .newspaper__fontstyle_poppings_title{
+
+    font-family: Poppings, sans-serif;
+
+    font-size: calc(18/var(--default-font-size)*1rem);
+    line-height: calc(24/var(--default-font-size)*1rem);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-secondary-800);
+  
+  }
+
+  .newspaper__fontstyle_poppings_subtitle{
+
+    font-family: Poppings, sans-serif;
+
+    font-size: calc(22/var(--default-font-size)*1rem);
+    line-height: calc(32/var(--default-font-size)*1rem);
+    font-weight: normal;
+    color: var(--color-secondary-800);
+  
+  }
+
+  .newspaper__fontstyle_poppings_special_text{
+    
+    font-family: Poppings, sans-serif;
+    
+    font-size: calc(18/var(--default-font-size)*1rem);
+    line-height: calc(32/var(--default-font-size)*1rem);
+    color: var(--color-secondary-800);
+
+  }
+  
+  .newspaper__fontstyle_poppings_text{
+    
+    font-family: Poppings, sans-serif;
+    
+    font-size: calc(16/var(--default-font-size)*1rem);
+    line-height: calc(24/var(--default-font-size)*1rem);
+    color: var(--color-secondary-800);
+
+  }
+  
