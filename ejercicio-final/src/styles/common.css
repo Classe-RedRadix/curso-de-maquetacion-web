@@ -6,7 +6,7 @@ body {
     padding: 0 !important;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: var(--background-body);
+    background-image: url("../assets/images/Texture.jpg");
 }
 
 .newspaper {
