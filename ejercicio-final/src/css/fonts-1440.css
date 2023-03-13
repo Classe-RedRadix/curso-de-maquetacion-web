@@ -1,0 +1,16 @@
+@media all and (min-width: 1440px) {
+  .title-lg {
+    font-size: 140px;
+    line-height: 156px;
+  }
+  
+  .title-md {
+    font-size: 80px;
+    line-height: 96px;
+  }
+  
+  .title-sm {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

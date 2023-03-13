@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Italiana;
+    src: url(../../recursos/Italiana-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../../recursos/Poppins-Regular.ttf);
+}
+
+.default {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1F0A70;
+}
+
+.big {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #1F0A70;
+}
+
+.small {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F0A70;
+}
+
+.xsmall {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1F0A70;
+}
+
+.title-lg {
+  font-family: 'Italiana';
+  font-weight: 400;
+  font-size: 86px;
+  line-height: 96px;
+  text-align: center;
+  color: #1F005C;
+}
+
+.title-md {
+  font-family: 'Italiana';
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  color: #1F0A70;
+}
+
+.title-sm {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1F0A70;
+}
