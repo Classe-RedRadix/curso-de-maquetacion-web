@@ -1,4 +1,5 @@
 .newspaper-page {
+  padding-top: 40px;
   background-image: url('../../img/Newspaper-bg.svg');
 }
 
@@ -26,6 +27,7 @@
 .newspaper-issue {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 100px;
   font-family: 'Poppins';
   font-weight: 400;
@@ -52,7 +54,13 @@
   width: 100%;
 }
 
+.bottomsection .newspaper-article__photo {
+  padding: 24px 0;
+}
+
+
 .newspaper-article-preview {
   padding-top: 40px;
   padding-bottom: 40px;
+  border-bottom: 2px solid black;
 }
