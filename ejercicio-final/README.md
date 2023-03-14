@@ -6,6 +6,8 @@ Bueno, sabemos que el curso ha sido duro y que algunos ejercicios han sido verda
 
 ![Newspaper](./recursos/newpaper.png)
 
+figma: https://www.figma.com/file/WU9SGCXr4wefVOdDoIJcrq/%5BClasse%5D-Ejercicios-pr%C3%A1cticos?node-id=343%3A6990&t=lzWuFvq58W9eVcKS-0
+
 Si durante el desarrollo tienes preguntas, no dudes en preguntar en el canal de Slack.
 
 Y no olvides subir tu código a una PR del repositorio. [¿Recuerdas cómo entregar ejercicios en Classe?](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/entrega-de-ejercicios.md)
