@@ -1,0 +1,39 @@
+.newspaper__header-title {
+  font-family: var(--font-italiana);
+  font-weight: 400;
+  font-size: 8.75rem;
+  line-height: 9.75rem;
+  text-transform: uppercase;
+  color: var(--secondary-900);
+}
+
+.newspaper__headline-article-header {
+  font-family: var(--font-italiana);
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+.newspaper__body-article-title {
+  font-family: var(--font-italiana);
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: var(--spacing-s);
+}
+
+.newspaper__body-article-subtitle {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: var(--spacing-s);
+}
+
+.newspaper__title {
+  font-family: var(--font-poppins);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
