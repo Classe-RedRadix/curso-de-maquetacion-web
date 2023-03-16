@@ -1,0 +1,108 @@
+* {
+  font-family: Poppins;
+}
+
+body {
+  font-size: 16px;
+  background-color: #1f005c;
+}
+
+.div-general {
+  display: flex;
+  color: #ffacff;
+}
+
+#h2-title-touch {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 0.5rem;
+}
+
+.image {
+  width: 50%;
+}
+.image img {
+  width: 35rem;
+  margin-top: 10rem;
+}
+
+.keep-in-touch {
+  margin-top: 4rem;
+  margin-right: 6rem;
+}
+
+form {
+  width: 45rem;
+}
+
+.form-name-lastname {
+  display: flex;
+}
+
+.lastname {
+  margin-left: 1rem;
+}
+
+.form-input {
+  margin-bottom: 1rem;
+}
+
+.form-input label {
+  margin-bottom: 2rem;
+}
+
+.form-input input,
+.form-input textarea {
+  background-color: #1f0a70;
+  border: 0;
+  border-bottom: 1px solid #a36eba;
+  height: 3.2rem;
+  width: 100%;
+  color: white;
+  padding: 0.5rem;
+}
+
+.form-input textarea {
+  height: 6.5rem;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+  outline: none;
+}
+
+.form-input-checkbox {
+  display: flex;
+}
+
+.form-input-checkbox [type='checkbox'] {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.3rem;
+  margin-top: 1rem;
+  appearance: none;
+  border: 1px solid #ffacff;
+}
+
+.form-input-checkbox p a {
+  color: #ffacff;
+}
+
+#submit-button {
+  padding: 0.7rem;
+  width: 10rem;
+  margin-top: 2rem;
+  color: #1f005c;
+  border: 0;
+  background-color: #ffacff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease;
+}
+
+#submit-button:hover {
+  background-color: #1f0a70;
+  color: #ffacff;
+  transition: all 0.3s ease;
+}

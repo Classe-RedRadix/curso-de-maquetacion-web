@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio final modulo 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="div-general">
+        <div class="image">
+          <img alt="imagen de robots" src="../assets/images/form-image.jpg" />
+        </div>
+        <div>
+          <div class="keep-in-touch">
+            <h1 id="h2-title-touch">KEEP IN TOUCH</h1>
+            <p id="p-touch">
+              Get news and updates as soon as they are announced: preorders, new
+              trailers, new features and much more!
+            </p>
+          </div>
+          <form action="" method="post">
+            <div class="form-name-lastname">
+              <div class="form-input">
+                <label for="name">First name:</label>
+                <input type="text" name="name" />
+              </div>
+              <div class="form-input lastname">
+                <label for="lastname">Last name:</label>
+                <input type="text" name="lastname" />
+              </div>
+            </div>
+            <div class="form-input">
+              <label for="email">Email:</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="form-input">
+              <label for="subject">Subject:</label>
+              <input type="text" name="subject" />
+            </div>
+            <div class="form-input">
+              <label for="message">Message:</label>
+              <textarea type="text" name="message"></textarea>
+            </div>
+            <div class="form-input-checkbox">
+              <input type="checkbox" />
+              <p>
+                I have read the
+                <a href="#">Privacy Policy</a>
+                and I agree to receive the Newsletter.
+              </p>
+            </div>
+            <button type="submit" id="submit-button">SAVE</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
