@@ -1,0 +1,30 @@
+/* Italiana */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/italiana/italiana-v16-latin-regular.woff2") format("woff2"), url("../assets/fonts/italiana/italiana-v16-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Poppins */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/poppins/poppins-v20-latin-regular.woff2") format("woff2"), url("../assets/fonts/poppins/poppins-v20-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/poppins/poppins-v20-latin-italic.woff2") format("woff2"), url("../assets/fonts/poppins/poppins-v20-latin-italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/poppins/poppins-v20-latin-600.woff2") format("woff2"), url("../assets/fonts/poppins/poppins-v20-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}/*# sourceMappingURL=main.css.map */

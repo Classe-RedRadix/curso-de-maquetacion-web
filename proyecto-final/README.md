@@ -1,3 +1,13 @@
 # Proyecto final
 
-TBD
+# De aperitivo...
+
+- [X] Live reloading
+- [X] Sass
+- [X] Estructura del proyecto
+- [X] Fuentes
+- [X] Imágenes
+- [ ] Planificación
+- [ ] Semántica
+
+
