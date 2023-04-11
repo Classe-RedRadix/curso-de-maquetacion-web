@@ -1,0 +1,12 @@
+.newspaper {
+	font-size: rem(16);
+}
+
+.newspaper__page {
+	margin: 0 rem($page-margin);
+	max-width: rem($page-max-width);
+
+	@include mq($bp-desktop) {
+		margin: 0 auto;
+	}
+}

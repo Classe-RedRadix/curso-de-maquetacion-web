@@ -1,0 +1,70 @@
+// COLUMNS
+.newspaper__article-cols {
+	@include mq($bp-desktop) {
+		background: yellow;
+		columns: 2;
+		column-gap: rem($page-gap-desktop);
+
+		p {
+			break-inside: avoid;
+		}
+	}
+}
+
+
+
+// ROW 1
+.newspaper__article--featured {
+	@include mq($bp-desktop) {
+		.newspaper__content-group {
+			background: pink;
+			grid-column: span 8;
+		}
+
+		.newspaper__article-media {
+			background: deeppink;
+			grid-column: span 4;
+		}
+	}
+}
+
+
+
+
+
+// ROW 2
+.newspaper__article--middle-main {
+	background: orange;
+	grid-column: span 5;
+}
+
+.newspaper__ad--middle {
+	background: lightgreen;
+	grid-column: span 3;
+}
+
+.newspaper__article-group--middle-aside {
+	background: #fabada;
+	grid-column: span 4;
+}
+
+
+
+
+
+// ROW 3
+.newspaper__article--end-primary {
+	background: #c0ffee;
+	grid-column: span 5;
+}
+.newspaper__ad--end-aside {
+	margin-top: rem(36);
+	background: red;
+	grid-column: span 5;
+	grid-row: 2 / 3;
+}
+.newspaper__article--end-secondary {
+	background: blue;
+	grid-column: 7 / span 6;
+	grid-row: span 2;
+}

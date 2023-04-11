@@ -1,0 +1,5 @@
+.nl {
+	@include mq($bp-desktop - 1, max-width) {
+		display: block;
+	}
+}

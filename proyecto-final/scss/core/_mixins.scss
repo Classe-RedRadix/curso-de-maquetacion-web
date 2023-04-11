@@ -1,0 +1,5 @@
+@mixin mq($pixels, $type: min-width) {
+	@media screen and ($type: em($pixels)) {
+		@content;
+	}
+}
