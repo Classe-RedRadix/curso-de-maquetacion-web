@@ -1,7 +1,6 @@
 // COLUMNS
 .newspaper__article-cols {
 	@include mq($bp-desktop) {
-		background: yellow;
 		columns: 2;
 		column-gap: rem($page-gap-desktop);
 
@@ -17,12 +16,10 @@
 .newspaper__article--featured {
 	@include mq($bp-desktop) {
 		.newspaper__content-group {
-			background: pink;
 			grid-column: span 8;
 		}
 
 		.newspaper__article-media {
-			background: deeppink;
 			grid-column: span 4;
 		}
 	}
@@ -34,17 +31,14 @@
 
 // ROW 2
 .newspaper__article--middle-main {
-	background: orange;
 	grid-column: span 5;
 }
 
 .newspaper__ad--middle {
-	background: lightgreen;
 	grid-column: span 3;
 }
 
 .newspaper__article-group--middle-aside {
-	background: #fabada;
 	grid-column: span 4;
 }
 
@@ -54,17 +48,45 @@
 
 // ROW 3
 .newspaper__article--end-primary {
-	background: #c0ffee;
 	grid-column: span 5;
 }
 .newspaper__ad--end-aside {
-	margin-top: rem(36);
-	background: red;
 	grid-column: span 5;
 	grid-row: 2 / 3;
+	margin-top: rem(calc($page-gap-desktop * 1.5));
 }
 .newspaper__article--end-secondary {
-	background: blue;
 	grid-column: 7 / span 6;
 	grid-row: span 2;
+}
+
+
+
+
+
+// ARTICLE
+.newspaper__article-link {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		.newspaper__article-title {
+			text-decoration: underline;
+		}
+	}
+}
+
+.newspaper__article-group--middle-aside .newspaper__article {
+	margin-top: rem(calc($page-gap-desktop * 1.5));
+	padding-bottom: rem(calc($page-gap-desktop * 1.5));
+}
+
+.newspaper__article-group--middle-aside .newspaper__article-link:first-child .newspaper__article {
+	margin-top: 0;
+}
+
+.newspaper__article--end-primary {
+	@include mq($bp-desktop) {
+		padding-top: rem(calc($page-gap-desktop * 1.5));
+	}
 }

@@ -1,0 +1,20 @@
+.newspaper__ad {
+	@include mq($bp-desktop - 1, max-width) {
+		margin: rem(calc($page-margin * 2)) 0;
+	}
+}
+
+.newspaper__ad-link {
+	border: 0;
+}
+
+.newspaper__ad-img {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+}
+
+
+.newspaper__ad--middle {
+	align-self: end;
+}

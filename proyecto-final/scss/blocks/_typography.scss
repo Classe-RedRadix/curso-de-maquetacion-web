@@ -1,0 +1,79 @@
+// PAGE
+.newspaper {
+	color: $color-secondary-800;
+	font-family: $font-family;
+	font-size: rem(18);
+	font-weight: 400;
+	line-height: rem(32);
+}
+
+// TITLES
+.title-lg {
+	font-family: $font-family-alt;
+	font-size: rem(86);
+	font-weight: 400;
+	line-height: rem(96);
+	text-transform: uppercase;
+
+	@include mq($bp-desktop) {
+		font-size: rem(140);
+		line-height: rem(156);
+	}
+}
+
+.title-md {
+	font-family: $font-family-alt;
+	font-size: rem(60);
+	font-weight: 400;
+	line-height: rem(72);
+
+	@include mq($bp-desktop) {
+		font-size: rem(80);
+		line-height: rem(96);
+	}
+}
+
+.title-sm {
+	font-size: rem(18);
+	font-weight: 600;
+	letter-spacing: rem(2);
+	line-height: rem(24);
+	text-transform: uppercase;
+}
+
+.title-xs {
+	font-size: rem(12);
+	font-weight: 600;
+	letter-spacing: rem(2);
+	line-height: rem(16);
+	text-transform: uppercase;
+}
+
+
+
+
+
+// BODY
+.p-big {
+	font-size: rem(20);
+	line-height: rem(32);
+
+	@include mq($bp-desktop) {
+		font-size: rem(22);
+	}
+}
+
+.p-small {
+	font-size: rem(16);
+	line-height: rem(24);
+}
+
+.p-xsmall {
+	font-size: rem(12);
+	line-height: rem(16);
+}
+
+.p-highlight {
+	font-size: rem(26);
+	line-height: rem(40);
+}

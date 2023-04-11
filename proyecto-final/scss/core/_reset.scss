@@ -9,3 +9,7 @@ body {
 figure {
 	margin: 0;
 }
+
+p {
+	margin: 0 0 rem(calc($page-vmargin / 1.5)); // 16px
+}

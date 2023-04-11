@@ -1,36 +1,39 @@
 .newspaper__header {
 	.newspaper__container {
 		@include mq($bp-desktop - 1, max-width) {
+			align-items: center;
+			column-gap: rem($page-gap);
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
-			column-gap: rem($page-gap);
-			align-items: center;
 		}
 	}
 }
 
 .newspaper__title {
 	grid-column: span 4;
+	margin: 0;
+	padding: rem(40) 0;
+	text-align: center;
 }
 
 .newspaper__metas {
-	margin: 0;
+	color: $color-secondary-900;
 	list-style: none;
-	padding: 0;
+	margin: 0;
+	padding: rem(8) 0;
 }
 
-.newspaper__meta {}
 .newspaper__meta--number {
 	text-align: right;
 
 	@include mq($bp-desktop) {
-		text-align: left;
 		grid-column: span 2;
+		text-align: left;
 	}
 }
 .newspaper__meta--date {
-	text-align: center;
 	grid-column: span 2;
+	text-align: center;
 
 	@include mq($bp-desktop) {
 		grid-column: span 8;
@@ -40,7 +43,7 @@
 	text-align: left;
 
 	@include mq($bp-desktop) {
-		text-align: right;
 		grid-column: span 2;
+		text-align: right;
 	}
 }

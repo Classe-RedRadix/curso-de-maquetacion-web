@@ -1,15 +1,3 @@
-html {
-  font-size: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-figure {
-  margin: 0;
-}
-
 /* Italiana */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -46,13 +34,82 @@ figure {
   }
 }
 
+.mb {
+  margin: 0 0 1.5rem;
+}
+
+.mb-small {
+  margin: 0 0 1rem;
+}
+
+.mb-no {
+  margin: 0;
+}
+
+.divider-top {
+  border-top: 1px solid #1f005c;
+}
+
+@media screen and (min-width: 90em) {
+  .divider-top-desktop-only {
+    border-top: 1px solid #1f005c;
+  }
+}
+
+.divider-bottom {
+  border-bottom: 1px solid #1f005c;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
 .newspaper {
   font-size: 1rem;
+  position: relative;
+}
+.newspaper::before {
+  background: url(../assets/img/layout/texture.jpg) left top no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .newspaper__page {
   margin: 0 1.25rem;
   max-width: 80rem;
+  position: relative;
 }
 @media screen and (min-width: 90em) {
   .newspaper__page {
@@ -62,7 +119,6 @@ figure {
 
 @media screen and (min-width: 90em) {
   .newspaper__container {
-    background: cyan;
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
     display: grid;
@@ -70,24 +126,104 @@ figure {
   }
 }
 
+.newspaper {
+  color: #1f0a70;
+  font-family: poppins, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.title-lg {
+  font-family: italiana, serif;
+  font-size: 5.375rem;
+  font-weight: 400;
+  line-height: 6rem;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 90em) {
+  .title-lg {
+    font-size: 8.75rem;
+    line-height: 9.75rem;
+  }
+}
+
+.title-md {
+  font-family: italiana, serif;
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+}
+@media screen and (min-width: 90em) {
+  .title-md {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+.title-sm {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.title-xs {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.p-big {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+@media screen and (min-width: 90em) {
+  .p-big {
+    font-size: 1.375rem;
+  }
+}
+
+.p-small {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.p-xsmall {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.p-highlight {
+  font-size: 1.625rem;
+  line-height: 2.5rem;
+}
+
 @media screen and (max-width: 89.9375em) {
   .newspaper__header .newspaper__container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     -moz-column-gap: 0.75rem;
          column-gap: 0.75rem;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .newspaper__title {
   grid-column: span 4;
+  margin: 0;
+  padding: 2.5rem 0;
+  text-align: center;
 }
 
 .newspaper__metas {
-  margin: 0;
+  color: #1f005c;
   list-style: none;
-  padding: 0;
+  margin: 0;
+  padding: 0.5rem 0;
 }
 
 .newspaper__meta--number {
@@ -95,14 +231,14 @@ figure {
 }
 @media screen and (min-width: 90em) {
   .newspaper__meta--number {
-    text-align: left;
     grid-column: span 2;
+    text-align: left;
   }
 }
 
 .newspaper__meta--date {
-  text-align: center;
   grid-column: span 2;
+  text-align: center;
 }
 @media screen and (min-width: 90em) {
   .newspaper__meta--date {
@@ -115,14 +251,31 @@ figure {
 }
 @media screen and (min-width: 90em) {
   .newspaper__meta--edition {
-    text-align: right;
     grid-column: span 2;
+    text-align: right;
+  }
+}
+
+.newspaper__row {
+  padding: 2.5rem 0;
+}
+
+.newspaper__row--end {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 90em) {
+  .newspaper__row--end .newspaper__container::after {
+    background: #1f005c;
+    content: "";
+    grid-row: 1/3;
+    justify-self: center;
+    width: 1px;
   }
 }
 
 @media screen and (min-width: 90em) {
   .newspaper__article-cols {
-    background: yellow;
     -moz-columns: 2;
          columns: 2;
     -moz-column-gap: 1.5rem;
@@ -136,44 +289,85 @@ figure {
 
 @media screen and (min-width: 90em) {
   .newspaper__article--featured .newspaper__content-group {
-    background: pink;
     grid-column: span 8;
   }
   .newspaper__article--featured .newspaper__article-media {
-    background: deeppink;
     grid-column: span 4;
   }
 }
 
 .newspaper__article--middle-main {
-  background: orange;
   grid-column: span 5;
 }
 
 .newspaper__ad--middle {
-  background: lightgreen;
   grid-column: span 3;
 }
 
 .newspaper__article-group--middle-aside {
-  background: #fabada;
   grid-column: span 4;
 }
 
 .newspaper__article--end-primary {
-  background: #c0ffee;
   grid-column: span 5;
 }
 
 .newspaper__ad--end-aside {
-  margin-top: 2.25rem;
-  background: red;
   grid-column: span 5;
   grid-row: 2/3;
+  margin-top: 2.25rem;
 }
 
 .newspaper__article--end-secondary {
-  background: blue;
   grid-column: 7/span 6;
   grid-row: span 2;
+}
+
+.newspaper__article-link {
+  color: inherit;
+  text-decoration: none;
+}
+.newspaper__article-link:hover .newspaper__article-title {
+  text-decoration: underline;
+}
+
+.newspaper__article-group--middle-aside .newspaper__article {
+  margin-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.newspaper__article-group--middle-aside .newspaper__article-link:first-child .newspaper__article {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 90em) {
+  .newspaper__article--end-primary {
+    padding-top: 2.25rem;
+  }
+}
+
+.newspaper__article-img {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 89.9375em) {
+  .newspaper__ad {
+    margin: 2.5rem 0;
+  }
+}
+
+.newspaper__ad-link {
+  border: 0;
+}
+
+.newspaper__ad-img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.newspaper__ad--middle {
+  align-self: end;
 }/*# sourceMappingURL=main.css.map */

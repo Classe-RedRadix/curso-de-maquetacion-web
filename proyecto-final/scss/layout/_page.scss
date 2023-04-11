@@ -1,10 +1,24 @@
 .newspaper {
 	font-size: rem(16);
+	position: relative;
+
+	&::before {
+		background: url(../assets/img/layout/texture.jpg) left top no-repeat;
+		background-size: cover;
+		content: '';
+		height: 100%;
+		left: 0;
+		opacity: .5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
 }
 
 .newspaper__page {
 	margin: 0 rem($page-margin);
 	max-width: rem($page-max-width);
+	position: relative;
 
 	@include mq($bp-desktop) {
 		margin: 0 auto;

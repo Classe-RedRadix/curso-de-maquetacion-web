@@ -3,3 +3,44 @@
 		display: block;
 	}
 }
+
+.mb {
+	margin: 0 0 rem($page-vmargin);
+}
+
+.mb-small {
+	margin: 0 0 rem(calc($page-vmargin / 1.5));
+}
+
+.mb-no {
+	margin: 0;
+}
+
+
+.divider-top {
+	border-top: 1px solid $color-secondary-900;
+}
+
+.divider-top-desktop-only {
+	@include mq($bp-desktop) {
+		border-top: 1px solid $color-secondary-900;
+	}
+}
+
+.divider-bottom {
+	border-bottom: 1px solid $color-secondary-900;
+}
+
+.sr-only {
+	border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}

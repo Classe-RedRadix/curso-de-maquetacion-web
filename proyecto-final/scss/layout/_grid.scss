@@ -1,6 +1,5 @@
 .newspaper__container {
 	@include mq($bp-desktop) {
-		background: $coding-pending;
 		column-gap: rem($page-gap-desktop);
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
