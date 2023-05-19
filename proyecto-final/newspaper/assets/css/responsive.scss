@@ -1,0 +1,110 @@
+@media(max-width:1439px) {
+    body {
+        margin: calc(0/var(--font-size-base)*1rem);
+        width: 100%;
+
+        .paper {
+            padding: calc(20 / var(--font-size-base) * 1rem);
+            width: calc(375 / var(--font-size-base) * 1rem);
+
+            .newspaper__header {
+                h1 {
+                    font-size: calc(86/var(--font-size-base)*1rem);
+                    line-height: calc(96/var(--font-size-base)*1rem);
+                }
+
+                .post__header {
+                    .edition__number {
+                        flex-basis: 33%;
+                        text-align: center;
+                    }
+
+                    .date__time {
+                        flex-basis: 31%;
+                        text-align: center;
+                    }
+
+                    .edition__number {
+                        text-align: center;
+                    }
+
+                }
+            }
+
+            .first__block {
+                width: 100%;
+
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    .title__medium {
+                        font-size: calc(60/var(--font-size-base)*1rem);
+                        line-height: calc(72/var(--font-size-base)*1rem);
+                        margin-bottom: calc(16/var(--font-size-base)*1rem);
+                        width: 100%;
+                    }
+
+                    .text__cols {
+                        display: flex;
+                        margin-bottom: calc(24/var(--font-size-base)*1rem);
+                        position: unset;
+                        width: 100%;
+                    }
+
+                    figure {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .second__block {
+                flex-direction: column;
+
+                .second__block-article {
+                    width: 100%;
+
+                    .second__block-img {
+
+                        > img {
+                            width: 100% !important;
+                        }
+                    }
+
+                }
+
+                .second__block-article--collection {
+                    .second__block-article--mini {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            .third__block {
+                .third__block-article--left {
+                    border: none;
+                    width: 100%;
+                }
+
+                .third__block-article--right {
+                    width: 100%;
+
+                    .title__large {
+                        font-size: calc(60/var(--font-size-base)*1rem);
+                        line-height: calc(72/var(--font-size-base)*1rem);
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}
